@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import { get } from 'jquery';
+import $ from 'jquery';
+import { type } from '@testing-library/user-event/dist/type';
 
 export default function SignUpComponent({회원가입, timer, timerCounterfn, mapAddressFn}) {
 
@@ -520,6 +521,7 @@ export default function SignUpComponent({회원가입, timer, timerCounterfn, ma
         let isHp3 = true;
         let isHpdisabled = true;
         let 발송인증번호 = state.발송인증번호;
+        let isHpOk = false;
 
         // 입력인증번호(문자열)와 발송인증번호(숫자) 비교하기
         isConfirmModal = true;
@@ -528,9 +530,10 @@ export default function SignUpComponent({회원가입, timer, timerCounterfn, ma
             isHp3 = false;
             발송인증번호= '';
             isHpdisabled = true;
+            isHpOk =true;
 
             // 타이머 정지
-            console.log( timer.setId  );
+            // console.log( timer.setId  );
             clearInterval( timer.setId );
         }
         else {            
@@ -547,7 +550,8 @@ export default function SignUpComponent({회원가입, timer, timerCounterfn, ma
             confirmMsg: confirmMsg,
             isHp3: isHp3,
             발송인증번호: 발송인증번호,
-            isHpdisabled: isHpdisabled
+            isHpdisabled: isHpdisabled,
+            isHpOk:isHpOk
         })
 
     }
@@ -1030,11 +1034,7 @@ const onChangeUserBirthDate=(e)=>{
                     ...state,
                     이용약관동의: state.이용약관동의.filter((item)=>item!==e.target.value)
                 })
-            }
-
-
-
-            
+            }   
         }
 
     }
@@ -1063,6 +1063,95 @@ const onChangeUserBirthDate=(e)=>{
         })
     }
 
+    // 가입하기 버튼 클릭 이벤트 전송
+    // 폼 데이터 전송 onSubmit={} 이벤트
+    const onSubmitSignupEvent=(e)=>{
+        e.preventDefault();
+        
+        // AJAX({});
+        // AXIOS({}).THEN().chatch();
+        // const formData = {
+        //     아이디:state.아이디,
+        //     비밀번호:state.비밀번호
+        // }
+        // $.ajax({
+        //     url:'http://cshong123.dothome.co.kr/signup_db/insert.php',
+        //     type:'POST',
+        //     date: formData,
+        //     success(res){
+        //         console.log('AJAX 성공 : ' + res)
+        //     },
+        //     error(err){
+        //         console.log('AJAX 실패 : ' + err)
+        //     }
+        // });
+
+
+
+        // axios()
+        // // 폼 데이터 생성자 생성
+        // let newFormData = new FormData();
+        // newFormData.append('아이디', state.아이디);
+        // newFormData.append('비밀번호', state.비밀번호);
+
+
+        // axios({
+        //     url:'',
+        //     method:'POST',
+        //     data: newFormData // 전송할 폼 데이터
+        // })
+        // .then((res)=>{
+        //     console.log(res.data);
+        // })
+        // .chatch((err)=>{
+        //     console.log(err)
+        // });
+
+
+        // 가입하기 버튼 클릭 했을때 검증 조건문 
+        // 입력폼 화면의 필수 항목 선택 항목, 그리고 중복확인, 인증등 항목들의
+        // 빠짐없는 항목을 체크하고 가용성있는 폼 데이터를 전송한다.
+        // 1. 아이디 : 빈값이면 입력 요구
+        // 2. 아이디 중복학인 : 중복확인을 검사 한다. isIdOk
+        // 3. 비밀번호:빈값이면 입력 요구
+        // 4. 비밀번호 확인: 두개 비밀번호 비교 확인  isPw2 false이고 빈 값이 아니면
+        // 5. 이름: 빈값이 입력 요구
+        // 6. 이메일: 빈값이 입력 요구
+        // 7. 이메일 중복확인 : isEmailOk
+        // 8. 휴대폰 : 빈값이 입력 요구
+        // 9. 휴대폰 : 인증번호 성공 여부 확인  //인증성공 추가 isHpOk true 이면 성공
+        // 10. 주소1, 주소2 : 빈값이 입력 요구
+        
+        // 11. 성별 : 선택사항이므로  유효성에서 제외
+        // 12. 생년월일 : 선택사항이므로  유효성에서 제외
+        // 13. 추가입력사항 : 선택사항이므로  유효성에서 제외
+
+        // 14. 이용약관동의 : 필수항목 3개 확인   //추가 검증
+        //     가입하기 클릭하면 이용약관동의 배열 값 내용중 필수 항목을 카운터 한다. 변수에 대입
+        
+        // 15. 1 ~ 14 까지 이상없으면 전송
+
+        const result = state.이용약관동의.map((item)=>item.includes('필수')===true? 1 : 0);
+        let cnt=0;
+        result.map((item)=>{
+            cnt+=item;
+        })
+        if(cnt<3){
+            alert('이용약관동의 필수항목 3개를 선택해야 합니다')
+        }
+        else{
+            alert('이용약관동의 필수항목 3개 입니다 잘했어')
+        }
+      
+
+        
+
+
+    
+
+    }
+
+
 
     return (
         <>
@@ -1076,7 +1165,7 @@ const onChangeUserBirthDate=(e)=>{
                                 <p><span><i>*</i>필수입력사항</span></p>
                             </div>
                             <div className="content">
-                                <form name='sign_up_form' id='signUpForm' method='post' action="./sign_up.php">
+                                <form onSubmit={onSubmitSignupEvent} name='sign_up_form' id='signUpForm' method='post' action="./sign_up.php">
                                     <ul>
                                         <li>
                                             <div>
@@ -1487,7 +1576,7 @@ const onChangeUserBirthDate=(e)=>{
                                                                 value={'본인은 만 14세 이상입니다.(필수)'} 
                                                                 checked={state.이용약관동의.includes('본인은 만 14세 이상입니다.(필수)')}
                                                                 onChange={onChangeUserService}
-                                                                />본인은 만 14세 이상입니다.</label><span>본인은 만 14세 이상입니다.</span>                                                       
+                                                                />본인은 만 14세 이상입니다.</label><span>본인은 만 14세 이상입니다.(필수)</span>                                                       
                                                         </li>
 
                                                 </ul> 
@@ -1529,7 +1618,7 @@ const onChangeUserBirthDate=(e)=>{
         </>
 
     );
-};
+    };
 
 SignUpComponent.defaultProps = {
     회원가입: {
@@ -1592,6 +1681,9 @@ SignUpComponent.defaultProps = {
 
         // 6-5. 다른번호인증 : 인증번호 성공하면 보임
         isHp3: true,
+
+        // 6-6 휴대폰 인증 성공 변수 저장
+        isHpOk:false,
 
 
 
