@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    'use strick'
+
+
+    function func2(){
+        let a = 20;
+        let b = 120;
+        return console.log(`선언적함수 리턴값 ${a+b}`);
+    }
+    func2();
+
+
+    const func1 = function(x,y){
+        let a = x;
+        let b = y;
+        return console.log(`익명함수 리턴 값 ${a+b}`);
+    }
+
+    const 함수1 =(pa1, pa2)=> {
+        console.log(`함수 내부 파라미터값 출력`, pa1, pa2);
+    }
+    함수1(99.9);
+
+    const 함수2 = (pa)=>{
+        return  pa + 100;
+    }
+    console.log(`함수 밖에서 결과 출력`, 함수2 (9,99));
+
+
+    const 함수3 = (pa)=> pa+100;
+    console.log(`함수 밖에서 결과 출력`, 함수3 (9,99));
+</script>
+
+
+
+
+
+
+</body>
+</html>

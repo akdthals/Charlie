@@ -1,0 +1,1169 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+@import url(./skip.css);
+#wrap {
+  width: 100%;
+}
+#wrap #header {
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 3;
+  background-color: #fff;
+}
+#wrap #header.on {
+  animation: header-paral-on 0.6s ease-in-out both;
+}
+#wrap #header.off {
+  animation: header-paral-off 0.6s ease-in-out both;
+}
+#wrap #header .container {
+  width: 100%;
+  height: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #header .container .gap {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #header .container .gap .content .logo {
+  padding: 0 15px;
+  width: 195px;
+}
+#wrap #header .container .gap .content .logo h1 {
+  width: 156px;
+  height: 52px;
+  padding: 11px 0;
+}
+#wrap #header .container .gap .content .logo h1 a {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content .logo h1 a img {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content .nav {
+  padding: 0 15px;
+  background: #fff;
+  width: 975px;
+}
+#wrap #header .container .gap .content .nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+#wrap #header .container .gap .content .nav ul li {
+  margin: 15px 20px;
+}
+#wrap #header .container .gap .content .nav ul li a {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #000;
+}
+#wrap #header .container .gap .content #mobileNav {
+  display: none;
+  width: 24px;
+  height: 15px;
+  margin: auto 0 auto auto;
+}
+#wrap #header .container .gap .content #mobileNav a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrap #header .container .gap .content #mobileNav a i {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+#wrap #header .container .gap .content #mobileNav a i.line1 {
+  top: 0;
+  transition: all 0.3s;
+}
+#wrap #header .container .gap .content #mobileNav a i.line1.on {
+  top: 50%;
+  margin: -1px 0 0 0;
+  transform: rotate(135deg);
+}
+#wrap #header .container .gap .content #mobileNav a i.line2 {
+  top: 50%;
+  margin: -1px 0 0 0;
+}
+#wrap #header .container .gap .content #mobileNav a i.line2.on {
+  display: none;
+}
+#wrap #header .container .gap .content #mobileNav a i.line3 {
+  bottom: 0;
+  transition: all 0.3s;
+}
+#wrap #header .container .gap .content #mobileNav a i.line3.on {
+  bottom: 50%;
+  margin: 0 0 -1px 0;
+  transform: rotate(-135deg);
+}
+@keyframes header-paral-on {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-86px);
+  }
+}
+@keyframes header-paral-off {
+  0% {
+    transform: translateY(-86px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#wrap #main {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+#wrap #main #section1 {
+  width: 100%;
+}
+#wrap #main #section1 .container {
+  width: 100%;
+  position: relative;
+}
+#wrap #main #section1 .container .slide-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  pointer-events: none;
+  width: 500%;
+  display: flex;
+  position: relative;
+  margin: 0 0 0 -100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/tattoo-img-5.jpg);
+  z-index: 1;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/tattoo-img-3.jpg);
+  z-index: 3;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/tattoo-img-4.jpg);
+  z-index: 2;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/tattoo-img-5.jpg);
+  z-index: 1;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/tattoo-img-3.jpg);
+  z-index: 3;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 25, 25, 0.4);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .title {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .title .gap {
+  padding: 0 15px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .title .gap .content {
+  width: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .title .gap .content h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 24px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  margin: 0 0 55px 0;
+  width: 100%;
+  height: 48px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .title .gap .content .img1 {
+  width: 514px;
+  height: 88px;
+  margin-bottom: 60px;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide .title .gap .content .img2 {
+  width: 61px;
+  height: 68px;
+}
+#wrap #main #section1 .page-btn-box {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section1 .page-btn-box span {
+  margin: 0 10px;
+}
+#wrap #main #section1 .page-btn-box span a {
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+#wrap #main #section1 .page-btn-box span a.on {
+  border: 2px solid rgb(255, 255, 255);
+  transform: scale(1);
+}
+@keyframes slide {
+  0.00% {
+    left: 0%;
+  }
+  6.67% {
+    left: 0%;
+  }
+  13.33% {
+    left: 0%;
+  }
+  20.00% {
+    left: 0%;
+  }
+  26.67% {
+    left: 0%;
+  }
+  33.33% {
+    left: -100%;
+  }
+  40.00% {
+    left: -100%;
+  }
+  46.67% {
+    left: -100%;
+  }
+  53.33% {
+    left: -100%;
+  }
+  60.00% {
+    left: -100%;
+  }
+  66.67% {
+    left: -200%;
+  }
+  73.33% {
+    left: -200%;
+  }
+  80.00% {
+    left: -200%;
+  }
+  86.67% {
+    left: -200%;
+  }
+  93.33% {
+    left: -200%;
+  }
+  100.00% {
+    left: -300%;
+  }
+}
+#wrap #main #section2 {
+  width: 100%;
+  background: #fff;
+  padding: 130px 0;
+  background: url(../img/tattoo-icon-bg.jpg) no-repeat 50% top;
+}
+#wrap #main #section2 .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section2 .container .gap {
+  width: 100%;
+}
+#wrap #main #section2 .container .gap .title {
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section2 .container .gap .title figure {
+  width: 100%;
+  display: inline-block;
+}
+#wrap #main #section2 .container .gap .title figure img {
+  width: 100%;
+}
+#wrap #main #section2 .container .gap .title figure h5 {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 20px;
+  color: #929292;
+}
+#wrap #main #section2 .container .gap .title figure h1 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+  margin-bottom: 100px;
+}
+#wrap #main #section2 .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section2 .container .gap .content .left-box {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section2 .container .gap .content .left-box .col-gap {
+  padding: 0 15px;
+}
+#wrap #main #section2 .container .gap .content .left-box .col-gap .row-1 {
+  width: 360px;
+}
+#wrap #main #section2 .container .gap .content .left-box .col-gap .row-1 h2 {
+  display: block;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 7.2px;
+  font-family: "Montserrat";
+  color: rgb(0, 0, 0);
+}
+#wrap #main #section2 .container .gap .content .left-box .col-gap .row-1 p {
+  width: 360px;
+  height: 48px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgb(146, 146, 146);
+}
+#wrap #main #section2 .container .gap .content .left-box .col-gap .row-1 i {
+  display: block;
+  background-color: rgb(106, 213, 167);
+  margin: 28px 0;
+  height: 4px;
+  width: 30px;
+}
+#wrap #main #section2 .container .gap .content .center-box .col-gap {
+  padding: 0 15px;
+}
+#wrap #main #section2 .container .gap .content .center-box .col-gap img {
+  width: 360px;
+  height: 360px;
+}
+#wrap #main #section2 .container .gap .content .right-box .col-gap {
+  padding: 0 15px;
+}
+#wrap #main #section2 .container .gap .content .right-box .col-gap img {
+  width: 360px;
+  height: 360px;
+}
+#wrap #main #section3 {
+  width: 100%;
+  background-color: #000;
+}
+#wrap #main #section3 .container {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section3 .container .gap .content .left {
+  width: 33.333%;
+  height: 710px;
+}
+#wrap #main #section3 .container .gap .content .left .col-gap {
+  width: 100%;
+  margin: 0 0 0 -1px;
+}
+#wrap #main #section3 .container .gap .content .left .col-gap img {
+  width: 100%;
+  height: 745px;
+}
+#wrap #main #section3 .container .gap .content .center {
+  width: 33.333%;
+  z-index: 2;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 {
+  padding: 70px;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .top-box {
+  border: 7px solid rgb(106, 213, 167);
+  padding: 30px;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .top-box h4 {
+  color: rgb(255, 255, 255);
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .top-box h1 {
+  display: block;
+  font-family: "Montserrat";
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin: 9px 0 0 0;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .bottom-box {
+  padding: 50px;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .bottom-box h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 27px;
+  color: rgb(255, 255, 255);
+  margin: 0 0 32px 0;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .bottom-box h5 {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 22px;
+  margin: 0 0 32px 0;
+  color: rgb(255, 255, 255);
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .bottom-box button {
+  padding: 0 15px;
+  height: 50px;
+  background: rgb(106, 213, 167);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+#wrap #main #section3 .container .gap .content .center .col-gap2 .bottom-box button:hover {
+  background: #000;
+  color: #FFF;
+  border: 2px solid rgb(106, 213, 167);
+}
+#wrap #main #section3 .right {
+  width: 33.333%;
+  position: relative;
+}
+#wrap #main #section3 .right::after {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 25, 25, 0.5);
+}
+#wrap #main #section3 .right img {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section4 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/tattoo-icon-bg.jpg) no-repeat 50% top;
+}
+#wrap #main #section4 .container {
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+#wrap #main #section4 .container .gap {
+  width: 100%;
+}
+#wrap #main #section4 .container .gap .title {
+  text-align: center;
+}
+#wrap #main #section4 .container .gap .title figure {
+  width: 100%;
+}
+#wrap #main #section4 .container .gap .title figure img {
+  padding: 130px 0;
+}
+#wrap #main #section4 .container .gap .title h5 {
+  font-family: "Montserrat";
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(146, 146, 146);
+}
+#wrap #main #section4 .container .gap .title h1 {
+  margin: 0 0 125px 0;
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+#wrap #main #section4 .container .gap .content {
+  width: 100%;
+}
+#wrap #main #section4 .container .gap .content > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+#wrap #main #section4 .container .gap .content > ul > li {
+  width: 50%;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap {
+  width: auto;
+  height: 100%;
+  margin: 15px;
+  position: relative;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap figure {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap figure img {
+  width: 100%;
+  outline: 8px solid rgba(106, 213, 167, 0.5);
+  outline-offset: -30px;
+  transition: all 0.3s;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap figure img:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1);
+  opacity: 0.2;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap figure figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 18px 40px 15px 40px;
+  background: #fff;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap figure figcaption em {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul {
+  padding: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul li h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+  padding: 7px;
+  font-family: "Montserrat";
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul li h5 {
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul li p {
+  font-family: "Roboto";
+  color: rgb(117, 117, 117);
+  line-height: 24px;
+  font-size: 14px;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul li h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 24px;
+  font-family: "Roboto";
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul li button {
+  padding: 5px 14px;
+  height: 50px;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+#wrap #main #section4 .container .gap .content > ul > li .col-gap .text ul li button:hover {
+  background: #FFF;
+  color: #000;
+  border: 2px solid rgb(0, 0, 0);
+}
+#wrap #main #section5 {
+  width: 100%;
+  padding: 130px 0 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: url(../img/tattoo-icon-bg.jpg) no-repeat 50% top;
+}
+#wrap #main #section5 .container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section5 .container .gap {
+  width: 100%;
+}
+#wrap #main #section5 .container .gap .title {
+  text-align: center;
+}
+#wrap #main #section5 .container .gap .title hr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wrap #main #section5 .container .gap .title h5 {
+  font-family: "Montserrat";
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(146, 146, 146);
+}
+#wrap #main #section5 .container .gap .title h1 {
+  margin: 0 0 125px 0;
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+#wrap #main #section5 .container .gap figure {
+  text-align: center;
+}
+#wrap #main #section5 .container .gap figure > img {
+  width: 100%;
+}
+#wrap #main #section5 .container .gap figure > img:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1);
+  opacity: 0.2;
+  cursor: url(../img/icon-zoom.png), auto;
+}
+#wrap #main #section5 .container .gap figure h5 {
+  font-family: "Montserrat";
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(146, 146, 146);
+}
+#wrap #main #section5 .container .gap figure h1 {
+  margin: 0 0 125px 0;
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+#wrap #main #section5 .container .content ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section5 .container .content ul li {
+  width: 25%;
+}
+#wrap #main #section5 .container .content ul li .col-gap {
+  width: auto;
+  height: 100%;
+}
+#wrap #main #section5 .container .content ul li .col-gap .img-box img {
+  width: 100%;
+}
+#wrap #main #section6 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/tattoo-icon-bg.jpg) no-repeat 50% top;
+}
+#wrap #main #section6 .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section6 .container .gap {
+  width: 100%;
+}
+#wrap #main #section6 .container .gap .title {
+  text-align: center;
+}
+#wrap #main #section6 .container .gap .title h5 {
+  font-family: "Montserrat";
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(146, 146, 146);
+}
+#wrap #main #section6 .container .gap .title h1 {
+  margin: 0 0 125px 0;
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+#wrap #main #section6 .container .gap .content > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#wrap #main #section6 .container .gap .content > ul > li {
+  width: 25%;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap {
+  padding: 0 15px;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .top {
+  background: rgb(126, 186, 161);
+  width: 100%;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .top ul {
+  width: 100%;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .top ul li h2 {
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #fff;
+  padding: 35px 0;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .top ul li h4 {
+  background: rgb(98, 164, 134);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Montserrat";
+  padding: 10px 0;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .middle {
+  width: 100%;
+  padding: 25px;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .middle ul {
+  width: 100%;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .middle ul li {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 7px 0;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .middle ul li h5 {
+  font-size: 13px;
+  font-family: "Roboto";
+  line-height: 23px;
+  color: #626262;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .bottom {
+  padding: 0 35px 35px 35px;
+  width: 100%;
+}
+#wrap #main #section6 .container .gap .content > ul > li .col-gap .content-box .bottom button {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 15.7143px;
+  color: #fff;
+  background: #000;
+  width: 103.969px;
+  height: 29.703px;
+  padding: 5px 14px;
+}
+#wrap #main #section7 {
+  width: 100%;
+  background: url(../img/tattoo-img-24.jpg) no-repeat 50% 50% fixed;
+  background-size: 100% cover;
+  position: relative;
+  height: 700px;
+  padding: 6.831% 0;
+}
+#wrap #main #section7::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 25, 25, 0.7);
+}
+#wrap #main #section7 .container {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section7 .container .gap {
+  width: 100%;
+}
+#wrap #main #section7 .container .gap .title .content {
+  width: 100%;
+}
+#wrap #main #section7 .container .gap .title .content > ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li {
+  width: 50%;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap {
+  width: 100%;
+  padding: 0 15px;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box {
+  width: 100%;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.left {
+  width: 555px;
+  height: 300.1px;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.left h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(106, 213, 167);
+  line-height: 50px;
+  padding-bottom: 44.4px;
+  font-family: "Montserrat";
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.left h3 {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 37px;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.left i {
+  display: block;
+  background: rgb(106, 213, 167);
+  width: 30px;
+  height: 4px;
+  margin: 40px 0;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35.1px;
+  margin: 0 0 0 97.5px;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap {
+  width: 75%;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap .content-head {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgb(106, 213, 167);
+  font-family: "Montserrat";
+  line-height: 28px;
+  padding: 0 0 21px 0;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm {
+  padding: 15px 0 10px 0;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul {
+  width: 100%;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li {
+  width: 100%;
+  padding: 5px 0;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li:last-child {
+  text-align: center;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li input {
+  font-family: "Montserrat";
+  width: 100%;
+  height: 47px;
+  background: #fff;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 15px;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li input:focus {
+  outline: 0;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li textarea {
+  font-family: "Montserrat";
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  border: 0;
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  resize: none;
+  border-radius: 3px;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li textarea:focus {
+  outline: 0;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li button {
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+  height: 50px;
+  background: rgb(106, 213, 167);
+  color: #fff;
+  border: 3px solid rgb(106, 213, 167);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap #messageForm ul li button:hover {
+  background: #000;
+  color: #fff;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap .content-foot {
+  display: none;
+  font-size: 13px;
+  color: #626262;
+  text-align: center;
+  padding: 10px 15px;
+  border: 1.6px solid rgb(70, 180, 80);
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap .content-foot.foot1.on {
+  display: block;
+}
+#wrap #main #section7 .container .gap .title .content > ul > li .col-gap .content-box.right .content-wrap .content-foot.foot2.on {
+  display: block;
+}
+#wrap #main #section9 {
+  width: 100%;
+  padding: 130px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: url(../img/tattoo-icon-bg.jpg) no-repeat 50% top;
+}
+#wrap #main #section9 .container {
+  width: 100%;
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+#wrap #main #section9 .container .gap {
+  width: 100%;
+}
+#wrap #main #section9 .container .gap .title {
+  text-align: center;
+  position: relative;
+}
+#wrap #main #section9 .container .gap .title h2 {
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #000;
+  padding: 0 0 100px 0;
+}
+#wrap #main #section9 .container .content {
+  width: 100%;
+}
+#wrap #main #section9 .container .content > ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+#wrap #main #section9 .container .content > ul > li {
+  width: 33.33333333%;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap {
+  margin: 0 15px;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .img-box {
+  width: 100%;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .img-box img {
+  width: 100%;
+  transition: all 0.3s;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .img-box img:hover {
+  filter: grayscale(1);
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box {
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul {
+  width: 100%;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li {
+  width: 100%;
+  padding: 0 0 15px 0;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li:first-child a {
+  padding: 5px 15px;
+  background: #000;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li:first-child a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li h3 a {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #333;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li p {
+  font-size: 13px;
+  line-height: 180%;
+  color: #626262;
+  font-family: "Roboto";
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0 20px 0;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li:last-child {
+  color: #999;
+  font-size: 11px;
+}
+#wrap #main #section9 .container .content > ul > li .col-gap .txt-box ul li:last-child a {
+  color: #999;
+}
+#wrap #footer {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  background: #fff;
+}
+#wrap #footer .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #footer .container .gap {
+  margin: 0 15px;
+}
+#wrap #footer .container .gap .content {
+  width: 100%;
+  text-align: center;
+}
+#wrap #footer .container .gap .content .foot {
+  width: 100%;
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+#wrap #footer .container .gap .content .foot a {
+  margin: 0 20px;
+}
+#wrap #footer .container .gap .content .foot a i {
+  font-size: 22px;
+  color: #575757;
+}
+#wrap #footer .container .gap .content .foot-row2 {
+  padding: 40px 0;
+}
+#wrap #footer .container .gap .content .foot-row2 p {
+  font-size: 11px;
+  color: #626262;
+}
+#wrap .gotop {
+  z-index: 3;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#wrap .gotop a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap .gotop a i {
+  font-size: 24px;
+  margin: -7px 0 0 0;
+}

@@ -1,0 +1,132 @@
+#wrap{
+    width: 100%;
+    #header{
+        width: 100%;
+        .container{
+            width: 100%;
+            .gap{
+                width: 100%;
+                .content{
+                    width: 100%;
+                        .row1{
+                            padding: 10px 0;
+                        text-align: right;
+
+                            ul{
+                                display: flex;
+                                li{
+                                    a{}
+                                    i{}
+                                }
+                            }
+                        }
+                        .row2 {
+                        
+                            padding: 10px 0 20px 0;
+                            justify-content: space-between;
+                            .container{
+                                display:flex;
+                                width:100%;
+                                max-width: 1050px;
+                                margin: 0 auto;
+                                .left   {
+                                    width:325px;
+                                    h1 {
+                                        img {
+                                            width:82px;
+                                        }
+                                        span {
+                                            margin: 0 0 0 15px;
+                                            font-size: 18px;
+                                            font-weight: 600;
+                                            a {
+                                                color : #5f0080;
+                                            }
+                                            i {
+                                                color: #ddd;
+                                                
+                                            }
+                                            &:last-child{
+                                                a {
+                                                    color: #b5b5b5;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .center {
+                                    width:400px;
+                                    position: relative;
+                                    input {
+                                        z-index: 1;
+                                        width:100%;
+                                        height:48px;
+                                        border: 1px solid #5f0080 ;
+                                        background: #fff;
+                                        border-radius: 3px;
+                                        position: relative;
+                                        padding: 0 15px;
+                                        outline: 1px solid transparent;
+                                        outline-offset: -1px;
+                                        font-size: 15px;
+                                        &:focus {
+                                            outline: 1px solid #444;
+                                        }
+                                    }
+                                    a {
+                                        z-index: 2;
+                                        position: absolute;
+                                        top:9px;
+                                        right:5px;
+                                        width:35px;
+                                        height:35px;
+                                        img {
+                                            width:100%;
+                                        }
+                                    }
+                                }
+                                .right  {
+                                    width:325px;
+                                    text-align: right;
+                                    span {
+                                        margin: 0 0 0 17px;
+                                        a {
+                                            img {
+                                                width:auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .row3{
+                            .container{
+                                .left{
+                                    a{
+                                        img{}
+                                        span{}
+                                    }
+                                }
+                                .center{
+                                    ul{
+                                        li{
+                                            a{
+
+                                            }
+                                        }
+                                    }
+                                }
+                                .right{
+                                    a{
+                                        span{
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

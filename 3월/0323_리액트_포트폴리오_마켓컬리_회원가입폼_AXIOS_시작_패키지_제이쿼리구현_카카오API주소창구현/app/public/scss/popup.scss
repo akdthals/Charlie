@@ -1,0 +1,246 @@
+@import url('../css/fonts.css');
+@import url('../css/reset.css');
+
+
+
+#wrap{
+    width: 100%;
+    position: relative;
+    .container{
+        z-index: 1;
+        width: 100%;
+        position: relative;
+        .gap{
+            width: 100%;
+            padding: 40px 30px 30px 30px;
+            .title{
+                padding: 0 0 30px 0;
+                text-align: center;
+                
+                h1{
+                    font-size: 24px;
+                    font-weight: 600;
+                    strong{
+                        font-weight: 600;
+                        color: #5f0080;
+                    }
+                    span{
+                        color: #333;
+                    }
+                }
+                h2{
+                    padding: 10px 0 0 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .content{
+                width: 100%;
+                >ul{
+                    width: 100%;
+                    >li{
+                        width: 100%;
+                        padding: 5px 0;
+                        &:last-child{
+                            position: relative;
+
+                        }
+                        >div{
+                            width: 100%;
+                            &.input-box{
+                                width: 100%;
+                                input{
+                                    width: 100%;
+                                    height: 44px;
+                                    border: 1px solid #ddd;
+                                    background: #fff;
+                                    border-radius: 3px;
+                                    padding: 0 15px;
+                                    font-size: 15px;
+                                    color: #333;
+                                    outline-offset: -1px;
+                                    &:focus{
+                                        outline: 1px solid #777;
+                                    }
+                                    &::placeholder{
+                                        color: #bbb;
+                                    }
+                                }
+                                button{
+                                    position: absolute;
+                                    width: 120px;
+                                    right: 0;
+                                    top: 0;
+                                    height: 44px;
+                                    border:1px solid #5f0080;
+                                    color: #5f0080;
+                                    font-weight: 600;
+                                    background: #fff;
+                                    border-radius: 3px;
+                                    cursor: pointer;
+                                    img{
+                                        width: 25px;
+                                    }
+                                }
+
+                                &.box1{
+                                    padding: 0 130px 0 0;
+                                    position: relative;
+                                    width: 100%;
+                                    input{
+                                        background: #f3f0f0;
+                                    }
+                                }
+                                &.box2{
+                                    width: 100%;
+                                }
+                            }
+                            &.sub{
+                                font-size: 13px;
+                                color: #666;
+                                line-height: 160%;
+                                display: none;
+                                &.on{
+                                    display: block;
+                                }
+                                ul{
+                                    padding: 20px 0;
+                                    width: 100%;
+                                    li{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        >h4{
+                            font-size: 13px;
+                            color: #f03f40;
+                            img{
+                                width: auto;
+                                margin: 0 15px 0 0;
+                            }
+                        }
+                        >h5{
+                            font-size: 13px;
+                            color: #666;
+
+                        }
+                        >p{
+                            font-size: 12px;
+                            color: #666;
+                            line-height: 140%;
+                        }
+                        >a{
+                            position: absolute;
+                            right: 0;
+                            top: 5px;
+                            font-size: 12px;
+                            color: #999;
+                            img{
+                                margin: 0 0 0 5px;
+                                transform: translateY(-3px);
+                            }
+                        }
+                        >button{
+                            width: 100%;
+                            height: 44px;
+                            border: 1px solid #5f0080;
+                            background: #5f0080;
+                            color: #fff;
+                            font-weight: 600;
+                            border-radius: 3px;
+                            margin: 10px 0 30px 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #root{
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+    }
+}
+
+
+// <!-- 카카오 주소 검색 API -->
+        
+// <div id="layer"></div>
+
+// <script>
+//             // 우편번호 찾기 화면을 넣을 element
+//             let element_layer = document.getElementById('layer');
+//             let extra = '';
+
+        
+//             function closeDaumPostcode() {
+//                 // iframe을 넣은 element를 안보이게 한다.
+//                 element_layer.style.display = 'none';
+//             }
+        
+//             function sample2_execDaumPostcode() {
+//                 new daum.Postcode({
+//                     oncomplete: function(data) {
+//                         // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+        
+//                         // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+//                         // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+//                         var addr = ''; // 주소 변수
+//                         var extraAddr = ''; // 참고항목 변수
+        
+//                         //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+//                         if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+//                             addr = data.roadAddress;
+//                         } else { // 사용자가 지번 주소를 선택했을 경우(J)
+//                             addr = data.jibunAddress;
+//                         }
+        
+//                         // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+//                         if(data.userSelectedType === 'R'){
+//                             // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+//                             // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+//                             if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+//                                 extraAddr += data.bname;
+//                             }
+//                             // 건물명이 있고, 공동주택일 경우 추가한다.
+//                             if(data.buildingName !== '' && data.apartment === 'Y'){
+//                                 extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+//                             }
+//                             // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+//                             if(extraAddr !== ''){
+//                                 extraAddr = ' (' + extraAddr + ')';
+//                             }
+//                             // 조합된 참고항목을 해당 필드에 넣는다.
+//                             extra = extraAddr;
+                        
+//                         } else {
+//                             extra = '';
+//                         }
+
+                                
+//                         // 카카오주소 검색 API 주소1 => 바인딩
+
+//                         document.getElementById("apiAddr1").value =`${data.zonecode} ${addr} ${extra}`;
+//                         // 커서를 상세주소 필드로 이동한다.
+//                         document.getElementById("apiAddr2").focus();
+        
+//                         // iframe을 넣은 element를 안보이게 한다.
+//                         // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+//                         element_layer.style.display = 'none';
+//                     },
+//                     width : '100%',
+//                     height : '100%',
+//                     maxSuggestItems : 5
+//                 }).embed(element_layer);
+        
+//                 // iframe을 넣은 element를 보이게 한다.
+//                 element_layer.style.display = 'block';
+        
+//             }
+//         </script>

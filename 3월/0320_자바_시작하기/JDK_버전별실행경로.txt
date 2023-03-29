@@ -1,0 +1,2 @@
+JDK 8 버전 => C:\Program Files\java\java-se-8u42-ri\bin
+JDK 11 버전 => C:\Program Files\java\jdk-11\bin

@@ -1,0 +1,39 @@
+// 화면 너비가 1170px에 도달하면 
+// 글자크기 반응형 단위로 변경 vw vh
+
+
+
+@media all and (max-width:1170px) {
+    #wrap {
+        #section1 {
+            .slide-container {
+                .slide-view {
+                    .slide-wrap {
+                        .slide {
+
+                            ul {
+                                li {
+                                    h2 {
+                                        font-size: 6.837606838vw;
+                                    }
+
+                                    hr {
+                                        height: 6px;
+                                        margin: 50px 0;
+                                    }
+
+                                    h4 {
+                                        font-size: 14px;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

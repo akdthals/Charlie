@@ -1,0 +1,5 @@
+컴포넌트 설계
+
+components
+wrap
+WrapComponent.jsx

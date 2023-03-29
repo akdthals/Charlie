@@ -1,0 +1,166 @@
+0313 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+link 사용할시 
+import {Link} from 'react-router-dom' 작성 
+페이지 여러개 열어야 할때  import {BrowserRouter, Routes, Route} from 'react-router-dom'
+<BrowserRouter>
+          <TopModalComponent />   {/* 고정페이지 */}
+
+          <Routes>
+              <Route path='/' element={<HeaderComponent />}>    {/* 네비게이션 항상 고정되는 페이지 메인버튼 클릭 페이지 이동 */}
+                  <Route index element={<SignUpComponent />}/> {/* 페이지들(컴포넌트들) */}
+                  {/* <Route path='./' element={<Sub1Component />}/>
+                  <Route path='./' element={<Sub2Component />}/>
+                  <Route path='./' element={<Sub3Component />}/>
+                  <Route path='./' element={<Sub4Component />}/> */}
+              </Route>
+          </Routes>
+
+          <FooterComponent />   {/* 고정페이지 */}
+      </BrowserRouter>
+
+ vertical-align: baseline; 기본정렬 (옆글씨랑?)
+
+0315///////////////////////////////////////////////////////////////////////////////////////
+ state.isSub2 && ( 트루가 아니고 false면 안보임
+제이쿼리는 오버 보다는 엔터로(onMouseEnterSub1)
+maxLength={16} 16이하까지 쓸수 있도록 지정 (<input type="password" maxLength={16} name='user_pw2' id='userPw2' placeholder='비밀번호를 한번 더 입력해주세요'/>)
+appearance: none; // 원래 모양 사용 안함 = 동그란 클릭 선택
+
+0316 //////////////////////////////////////////////////////////////////////////////////////////////
+AUTO_INCREMENT => 데이터 베이스 => 자동 증가번호 (중요)
+<%
+
+
+%> 제이에스피
+
+<?
+
+
+?> php
+0320 ///////////////////////////////////////////////////////////////////////////////////////////////
+1. java.jdk => java SE8 다운 받고 c드라이브에 프로그램 파일 에 저장 => bin 들어가서 위에 파일 주소 복사 => =>내 pc에서 마우스 왼쪽 클릭 => 고급 시스템 설정 클릭 => 환경 변수에 path 에 등록 => cmd 클릭해서 cd 치고 링크 붙여넣고 엔터 => java -version해서 버전 확인하기
+2. 비주얼에서 자바 ~~팩 다운 받기
+3. 컨트롤 콤마 눌러서 java para none으로
+4. 컨트롤 콤마 눌러서 JAVE RUNTIM =>
+{// 자바 JDK 8
+          "name": "JavaSE-1.8",
+          "path": "C:\\Program Files\\java\\java-se-8u42-ri\\bin\\",
+          "default": true
+        },
+        {// 자바 JDK 11
+          "name": "JavaSE-11",
+          "path": "C:\\Program Files\\java\\jdk-11\\bin\\",
+          "default": false
+        }
+
+0323////////////////////////////////////////////////////////////////////////////////////////
+// 클래스 => 첫글자 대문자이면서 영문 중간연결단어 대문자 [파스칼케이스] 
+        // 예] ProjectKurly
+        // 변수, 메서드 => 첫글자 소문자이면서 중간연결단어 대문자 [카멜케이스]
+        // 예] _ 와 $ 특수문자 사용 가능
+        // a = 50;  abc = 70; loveIs = 66;   _int  $long 
+        // 상수 => 모두 대문자로 사용 단어와 단어사이 연결되는 단어에는 언더바(팟홀) 사용 [팟홀케이스]
+        // 예] fianl double PI = 3.14;   ROOT_2 = 1.414213
+
+
+ 	<자바>
+        // 리터럴 => 변수에 대입대는 값
+        int cnt = 0; // 리터럴
+        char ch1 = 'A'; // 반드시 싱글 따옴표사용 리터럴
+        // char ch1 = 'AB'; // 두글자는 오류 리터럴오류
+        char ch2 = 64; // 아스키코드(ASCII CODE) 값 65(A) ~ 리터럴
+        char ch3 = '\u0041'; // 유니코드(UNI CODE) 값 \u0041(A) ~ 리터럴
+        char ch4 = '\t'; // tab 일정한 사이 간격을 띄운다. 리터럴
+        byte by1 = 99; // byte 정수 리터럴
+        short sh1 = 17536; // short 정수 리터럴
+        int bi = 0b10101; // 2진수 정수 리터럴 숫자 zero b => binary
+        //          16 8 4 2 1
+        //           1 0 1 0 1
+        // ===================
+                // 16 0 4 0 1 => 합계 21(10)
+        int oct = 037; // octal 8진수 421
+        //      4421 421
+        //        3   7
+        // =============
+        //       011 111
+        //       16  8  4  2  1
+        //       1  1  1  1  1
+        //  =========================
+        //      16 8 4 2 1 => 31
+        int hex = 0x1100; // octal 16진수 2진수 4자리
+        long lon = 1314235235L; // Long 숫자 맨뒤에 영문 L을 표기한다. 소문자 l도 가능
+        float flo = 1.41423F; // float 숫자 맨뒤에 영문 F을 표기한다. 소문자 f도 가능
+        double dou = 3.121223d; // double 숫자 맨뒤에 영문 D을 표기한다. 소문자 d도 가능
+
+0324////////////////////////////////////////////////////////////////////////////////
+parseInt다른형에서 (int) 숫자로 변환할때 
+npm i react-daum-postcode 다운 => import DaumPostcode from 'react-daum-postcode'; // 패키지 카카오(다움) => <DaumPostcode 
+                    id="postcode"
+                    onComplete={onCompletePostcode}
+                /> 맨 밑에
+
+0327 /////////////////////////////////////////////////////////////////////////////////////
+국어, 영어, 수학 합산 연습
+        int kor, eng, mat, tot;
+        float avg;
+
+        // 점수 입력 => 리터럴 값
+         kor = 98;
+         eng = 89;
+         mat = 89;
+
+         // 연산 합계
+         tot = kor + eng + mat;
+
+         // 평균 연산 = 총점 / 3
+         avg = (float)tot / 3;
+
+         // 출력
+         System.out.println("국어 " + kor);
+         System.out.println("영어 " + eng);
+         System.out.println("수학 " + mat);
+         System.out.println("총점 " + tot);
+         System.out.println("평균 " + avg);
+
+0328 //////////////////////////////////////////////////////////
+/*
+ * Printf 지시자
+ * %d 10진수 정수(Decimal)형식으로 출력
+ * %f 실수(floating-point)형식(부동소수점형식)으로 출력
+ * %s 문자열(String)로 출력
+ * %x 16진수(Hexa-Decimal) 형식으로 출력
+ * %o 8진수(Octal-Decimal) 형식으로 출력
+ * %b 논리형 (true/ false)부울린(Boolean) 형식으로 출력
+ * %c 문자로(charactor) 형식으로 출력
+ * %e 지수형식으로 출력  => 쓸일이 많이 없음
+ * 
+ */
+
+// 문제]
+        int x1 = 255;
+        float x2 = 33.456f;
+        float x3 = 3.14f;
+        double x4 = 1.233423912;
+        String x5 = "I Love You!";
+
+        // 위 변수값을 형식에 알맞게 출력하시오.
+        // 자리숫는 자유롭게 자료형에 맞는 형식지정 출력
+        // 정렬은 우측정렬 출력형식
+        // %8.4 => 소숫점자리이하 4자리 소소ㅜ점포함 5자리 (소숫점영역)
+        // 나머지 3자리 소숫점 앞 (정수 부분영역)
+
+        System.out.println("// Printf_출력형식_지시자 사용 % 8자리 우측정렬 자료형 지시자s ____________");
+        System.out.printf("x1 = %3d\n", x1);
+        System.out.printf("x2 = %8.4f\n", x2);
+        System.out.printf("x3 = %8.4f\n", x3);
+        System.out.printf("x4 = %8.4f\n", x4);
+        System.out.printf("x5 = %s\n", x5 );
+
+
+
+
+
+
+
+
+

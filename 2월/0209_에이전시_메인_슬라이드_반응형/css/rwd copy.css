@@ -1,0 +1,12 @@
+@media all and (max-width: 1170px) {
+  #wrap #section1 .slide-container .slide-view .slide-wrap .slide ul li h2 {
+    font-size: 6.837606838vw;
+  }
+  #wrap #section1 .slide-container .slide-view .slide-wrap .slide ul li hr {
+    height: 6px;
+    margin: 50px 0;
+  }
+  #wrap #section1 .slide-container .slide-view .slide-wrap .slide ul li h4 {
+    font-size: 14px;
+  }
+}
