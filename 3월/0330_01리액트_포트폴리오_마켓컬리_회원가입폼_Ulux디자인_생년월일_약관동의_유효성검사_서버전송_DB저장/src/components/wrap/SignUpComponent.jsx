@@ -3,7 +3,7 @@ import axios from 'axios';
 import $ from 'jquery';
 import { type } from '@testing-library/user-event/dist/type';
 
-export default function SignUpComponent({회원가입, timer, timerCounterfn, mapAddressFn}) {
+export default function SignUpComponent({회원가입, timer, timerCounterFn, mapAddressFn}) {
 
     // 상위컴포넌트(WrapComponent) 프롭스(Props)
     const {setId,minutes,seconds,msg,isEnd} = timer;
@@ -1054,7 +1054,7 @@ const onChangeUserBirthDate=(e)=>{
         if(state.confirmMsg.includes('발송인증번호')){            
             // 모달 닫기 그리고 함수 실행
             // 타이머함수 호출 실행
-            timerCounterfn();  // 상위 컴포넌트에서 함수 호출
+            timerCounterFn();  // 상위 컴포넌트에서 함수 호출
         }
 
         setState({
@@ -1131,26 +1131,84 @@ const onChangeUserBirthDate=(e)=>{
         
         // 15. 1 ~ 14 까지 이상없으면 전송
 
+
+
+
+
+        // 3가지 유형 
+        // 1-1
         const result = state.이용약관동의.map((item)=>item.includes('필수')===true? 1 : 0);
-        let cnt=0;
+        let sum=0;
         result.map((item)=>{
-            cnt+=item;
+            sum+=item;
         })
-        if(cnt<3){
+        if(sum<3){
             setState({
                 ...state,
-                isConfirmModal: true,
+                isConfirmModal:true,
                 confirmMsg:'이용약관동의 필수항목 3개를 선택해야 합니다'
             })
         }
         else{
             setState({
                 ...state,
-                isConfirmModal: true,
-                confirmMsg:'이용약관동의 필수항목 3개 입니다 잘했어'
+                isConfirmModal:false,
+                confirmMsg:''
             })
         }
+      
 
+
+
+        // 1-2
+        // indexOf('필수') 찾으면 0 1  3 ..... 글자 위치 인덱스 값
+        // 찾지 못하면 -1
+        // let cnt=0;
+        // state.이용약관동의.map((item)=>{
+        //     if(item.indexOf('필수')!==-1){ // -1아니면 찾은거임
+        //         cnt++;
+        //     }
+        //     console.log(`item.indexOf('필수') ${item.indexOf('필수')}`);
+        // });
+        // if(cnt<3){
+        //     setState({
+        //         ...state,
+        //         isConfirmModal: true,
+        //         confirmMsg: '이용약관동의 필수항목 3개를 선택해야 합니다'
+        //     })
+        // }
+        // else{
+        //     setState({
+        //         ...state,
+        //         isConfirmModal: false,
+        //         confirmMsg:''
+        //     })
+        // }
+
+
+
+        // 1-3
+        // let cnt2=0;
+        // state.이용약관동의.map((item)=>{
+        //     if(item.search('필수')!==-1){
+        //         cnt2++;
+        //     }
+        //     console.log(`item.search('필수') ${item.search('필수')}`);
+        // });
+        // if(cnt2<3){
+        //      setState({
+        //     ...state,
+        //     isConfirmModal:true,
+        //     confirmMsg:'이용약관동의 필수항목 3개를 선택해야 합니다'
+        // })
+        // }
+        // else{
+        //     setState({
+        //         ...state,
+        //         isConfirmModal:false,
+        //         confirmMsg:''
+        //     })
+        // }
 
 
         if(state.아이디===''){
@@ -1220,17 +1278,17 @@ const onChangeUserBirthDate=(e)=>{
             setState({
                 ...state,
                 isConfirmModal:true,
-                confirmMsg:'주소를 입력 해주세요'
+                confirmMsg:'주소를 검색 해주세요'
             })
         }
         else if(state.주소2===''){
             setState({
                 ...state,
                 isConfirmModal:true,
-                confirmMsg:'나머지 주소를 입력 해주세요'
+                confirmMsg:'나머지 주소를 입력  해주세요'
             })
         }
-        else if(cnt<3){
+        else if(sum<3){ // 이용약관동의 필수항목
             setState({
                 ...state,
                 isConfirmModal:true,
@@ -1238,6 +1296,8 @@ const onChangeUserBirthDate=(e)=>{
             })
         }
         else{
+            // 모두 통과 되면 
+            // 전송
             setState({
                 ...state,
                 isConfirmModal:false,
@@ -1245,27 +1305,57 @@ const onChangeUserBirthDate=(e)=>{
             })
         }
 
-
+        // 휴대폰 표현형식
+        // 시작 숫자 3자리   (1그룹)   $1
+        // 중간 숫자 3~4자리 (2그룹)   $2
+        // 끝  숫자 4자리    (3그룹)   $3
         const regExpHp = /^(\d{3})(\d{3,4})(\d{4})$/g;
-
-        let newFormData = new FormData();
-
-        newFormData.append('user_id', state.아이디)
-        newFormData.append('user_pw', state.비밀번호)
-        newFormData.append('user_name', state.이름)
-        newFormData.append('user_email', state.이메일)
-        newFormData.append('user_hp', state.휴대폰.replace(regExpHp,`$1-$2-$3`))
-        newFormData.append('user_addr', `${state.주소1}` `${state.주소2}`)
       
+        // 전송할 폼 데이터 생성
+        // AXIOS 폼데이터 생성 생성자를 이용 폼데이터 삽입
+        let newFormData =new FormData();
 
-        
+        newFormData.append('user_id',           state.아이디);
+        newFormData.append('user_pw',           state.비밀번호);
+        newFormData.append('user_name',         state.이름);
+        newFormData.append('user_email',        state.이메일);
+        newFormData.append('user_hp',           state.휴대폰.replace(regExpHp, '$1-$2-$3')); 
+        newFormData.append('user_addr',         `${state.주소1} ${state.주소2}`);
+        newFormData.append('user_gender',        state.성별);
+        newFormData.append('user_birth',         `${state.생년}-${state.생월}-${state.생일}`);
+        newFormData.append('user_add_input',     `${state.추가입력사항} ${state.참여이벤트명} ${state.추천인아이디}`);
+        newFormData.append('user_service',       state.이용약관동의);
+        newFormData.append('user_gaib_date',     `${new Date().getFullYear()} ${new Date().getMonth()+1} ${new Date().getDate()}`);
 
+        // AXIOS API(REST API)
+        // CORS(Crose Origin Resource Sharing)
+        // node.js 기반에서 리액트가 있는 위치 http://localhost:3000/ => http://cshong123.dothome.co.kr/signup_db/insert.php
+        // 프로토콜://도메인:포트번호/경로/index.html
+        // 브라우저가 보내는 주소(출처)와 받는 주소가 같은지 검사 정책 SOP RFC 6454 보안정책
+        // => 출처가 같은 출처에서만 공유할 수 있다는 정책 규칙  
+        axios({
+            url:'http://cshong123.dothome.co.kr/signup_db/form_data_insert.php', // 닷홈 호스팅 서버 : 서버사이드 스크립트 언어(JSP, PHP, ASP) => SQL => 데이터 베이스 저장소
+            method:'POST',
+            data: newFormData
+        })
+        .then((res)=>{
 
-    
+            if(res.status===200){
 
-    }
+                console.log(res.data);
 
+                setState({
+                    ...state,
+                    isConfirmModal:true,
+                    confirmMsg:'AXIOS 성공'
+                })
+            }
+        })
+        .catch((err)=>{
 
+            console.log('AXIOS 실패' , err)
+        })
+    } // 폼 서브밋 가입하기 버튼 클릭 이벤트 끝
 
     return (
         <>
@@ -1424,8 +1514,8 @@ const onChangeUserBirthDate=(e)=>{
                                                 <div className="center-box">
                                                     <button className={`addr-search-btn${state.isAddress?' on':''}`} onClick={onClickAddrPopupOpenApi}  type='button'>주소검색</button>
                                                     <input 
-                                                        onChange={onChangeAddr1}  
                                                         onFocus={onChangeAddr1}  
+                                                        onChange={onChangeAddr1}  
                                                         type='text' 
                                                         className={`${state.isAddress?'on':''}`} 
                                                         name='user_address1' 
