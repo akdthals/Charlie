@@ -1,0 +1,150 @@
+#wrap{
+    width: 100%;
+    #section11{
+        width: 100%;
+        padding: 120px 0;
+        .container{
+            width: 100%;
+            max-width: 1183px;
+            margin: 0 auto;
+            .gap{
+                width: 100%;
+                .title{
+                    width: 100%;
+                    padding: 0 0 70px 0 ;
+                    h1{
+                        font-size: 20px;
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        line-height: 22px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+                }
+                .content{
+                    width: 100%;
+                    .top-box{
+                        width: 100%;
+                        ul{
+                            width: 100%;
+                            display: flex;
+                            margin: 0 auto;
+                            li{
+                                width: 33%;
+                                margin: 0 15px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-flow: column;
+                                i{
+                                    font-size: 40px;
+                                    font-weight: 400;
+                                    line-height: 44px;
+                                    min-height: 65px;
+                                    margin: 0 3px 15px 3px ;
+                                }
+                                h3{
+                                    font-size: 11px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    line-height: 12px;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                        hr{
+                            width: 100%;
+                            height: 1px;
+                            margin: 130px 0;
+                            background:#e5e5e5 ;
+                            border: 0;
+                        }
+                    .bottom-box{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        .left-side{
+                            margin: 0 15px;
+                            ul{
+                                width: 100%;
+                                li{
+                                    width: 50%;
+                                    cursor: text;
+                                    margin-bottom:20px ;
+                                    input{
+                                        height: 42px;
+                                        width: 560px;
+                                        font-size: 12px;
+                                        background: #fff;
+                                        color: #dfdfdf;
+                                        outline-offset: -1px;
+                                        border-radius: 3px;
+                                        border: 1px solid #dfdfdf;
+                                        padding: 8px 15px;
+                                    }
+                                    h5{
+                                        font-size: 11px;
+                                        letter-spacing: 1px;
+                                        line-height: 23px;
+                                        text-transform: uppercase;
+
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .right-side{
+                            margin: 0 15px;
+                            ul{
+                                width: 100%;
+                                li{
+                                    width: 50%;
+                                    margin-bottom:20px ;
+                                    textarea{
+                                        height: 102px;
+                                        width: 561.5px;
+                                        font-size: 12px;
+                                        color: #000;
+                                        font-family: 'Open Sans';
+                                        background: #fff;
+                                        color: #dfdfdf;
+                                        outline-offset: -1px;
+                                        border-radius: 3px;
+                                        border: 1px solid #dfdfdf;
+                                        padding: 8px 15px;
+                                        display: flex;
+                                        align-items:flex-start;
+                                    }
+                                    button{
+                                        margin: 0 0 0 400px;
+                                        align-items: flex-start;
+                                        border: 2px solid #000;
+                                        color: #fff;
+                                        background: #000;
+                                        font-size: 12px;
+                                        font-weight: 600;
+                                        line-height: 23px;
+                                        padding: 8px 20px;
+                                        text-align: center;
+                                        text-transform: uppercase;
+                                        font-family: 'Open Sans';
+                                        width: 157px;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background: #fff;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

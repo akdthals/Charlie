@@ -1,0 +1,112 @@
+#wrap{
+    width: 100%;
+    #section9{
+        width: 100%;
+        padding: 120px 0;
+        .container{
+            width: 100%;
+            max-width: 1183px;
+            margin: 0 auto;
+            .gap{
+                width: 100%;
+                .title{
+                    padding: 0 0 59px 0;
+                    h1{
+                        font-size: 36px;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        line-height: 45px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #000;
+                    }
+                    h2{
+                        font-size: 13px;
+                        font-weight:600;
+                        letter-spacing: 1px;
+                        line-height: 20px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        padding: 12px 0;
+                    }
+                }
+                .content{
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    ul{
+                        width: 100%;
+                        display: flex;
+                        li{
+                            width: 33%;
+                            margin: 0 15px;
+                            div{
+                                margin: 0 auto;
+                                overflow: hidden;
+                                color: #575757;
+                                img{
+                                    width:100%;
+                                    transition: all 0.3s;
+                                    cursor: pointer;
+                                    &:hover{
+                                        transition: all 0.3s;
+                                        transform: scale(1.1);
+                                        filter: grayscale(0.7);
+                                    }
+                                }
+                                h4{
+                                    padding: 40px 0 0 0 ;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    letter-spacing: 2px;
+                                    line-height: 23px;
+                                    text-transform: uppercase;
+                                    a{
+                                        color: #000;
+                                    }
+                                }
+                                h5{
+                                    font-size: 10px;
+                                    letter-spacing: 1px;
+                                    line-height: 23px;
+                                    text-transform: uppercase;
+
+                                }
+                                p{
+                                    padding: 22px 0 0 0;
+                                    font-size: 13px;
+                                    letter-spacing: 0.26px;
+                                    line-height: 20px;
+                                    font-weight: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button{
+                    padding: 46px 0 0 0;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    button{
+                        border: 2px solid #000;
+                        background:#000 ;
+                        color: #fff;
+                        padding: 2px 14px;
+                        font-size: 11px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        line-height: 23px;
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        &:hover{
+                            background: #fff;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

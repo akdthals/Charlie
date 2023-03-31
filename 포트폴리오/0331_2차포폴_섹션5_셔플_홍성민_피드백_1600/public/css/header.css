@@ -1,0 +1,52 @@
+#header {
+  width: 100%;
+  background: #000;
+  height: 79px;
+  position: fixed;
+  z-index: 10;
+}
+#header .container {
+  width: 100%;
+  max-width: 1183px;
+  margin: 0 auto;
+}
+#header .container .gap {
+  width: 100%;
+}
+#header .container .gap .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .container .gap .content .left-box {
+  width: 140px;
+  padding: 6px 15px;
+}
+#header .container .gap .content .left-box a img {
+  width: 109px;
+  height: 34px;
+  justify-content: left;
+}
+#header .container .gap .content .right-box {
+  padding: 0 15px;
+}
+#header .container .gap .content .right-box ul {
+  display: flex;
+  align-items: center;
+  height: 79px;
+}
+#header .container .gap .content .right-box ul li {
+  padding: 5px 0 5px 40px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+#header .container .gap .content .right-box ul li a {
+  padding: 0 0 8px 0;
+  color: #fff;
+}
+#header .container .gap .content .right-box ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
