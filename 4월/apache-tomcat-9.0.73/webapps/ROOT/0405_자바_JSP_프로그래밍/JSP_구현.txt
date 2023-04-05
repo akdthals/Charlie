@@ -1,0 +1,22 @@
+톰캣서버 구동
+윈도우키 + R
+cmd
+
+cd C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\bin
+
+startup
+
+웹브라우저:주소창에
+
+localhost:8080/0405_자바_JSP_프로그래밍/변수_메서드.jsp
+localhost:8080/0405_자바_JSP_프로그래밍/index.jsp
+localhost:8080/0405_자바_JSP_프로그래밍/
+
+/////////////////////////////////////////////////////////////
+
+스크립트 요소의 정리
+
+JSP 페이지에서는
+선언문(Declaration)      : <%!  %>   전역변수 선언 메서드 선언
+스크립트릿(Scriptlet)     : <%   %>  지역변수 선언 그리고, 자바코드
+표현식(Exprelsion)       :: <%=  %>  화면에 출력

@@ -1,0 +1,7 @@
+
+cd C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\bin
+
+startup
+
+localhost:8080/혼자하기/변수_메서드_혼자하기.jsp
+
