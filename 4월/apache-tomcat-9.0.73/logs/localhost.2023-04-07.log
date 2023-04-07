@@ -1,0 +1,567 @@
+07-Apr-2023 13:59:03.309 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+07-Apr-2023 13:59:03.309 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+07-Apr-2023 13:59:03.311 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@41de5768')
+07-Apr-2023 14:07:44.962 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_JSP_프로그랭/J02_입력폼_응답.jsp]의 [8] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+8: <% request.setCharacterEncoding("UTF-8") %>
+9: 
+10: 
+11: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_JSP_프로그랭/J02_입력폼_응답.jsp]의 [8] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+8: <% request.setCharacterEncoding("UTF-8") %>
+9: 
+10: 
+11: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+07-Apr-2023 14:24:19.136 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_JSP_프로그랭/J02_입력폼_응답.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+63:                             out.println("�쉶�썝媛��엯<i>媛��뒫�븳</i> �굹�씠�엯�땲�떎.");
+64:                         }
+65:                         else{
+66:                            out.println(" <em>誘몄꽦�뀈�옄濡쒖꽌</em><br>�쉶�썝媛��엯<i>遺덇��뒫</i>�븳 �굹�씠�엯�땲�떎.")
+67:                         }  
+68:                         %>  
+69:                     </td>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_JSP_프로그랭/J02_입력폼_응답.jsp]의 [66] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+63:                             out.println("�쉶�썝媛��엯<i>媛��뒫�븳</i> �굹�씠�엯�땲�떎.");
+64:                         }
+65:                         else{
+66:                            out.println(" <em>誘몄꽦�뀈�옄濡쒖꽌</em><br>�쉶�썝媛��엯<i>遺덇��뒫</i>�븳 �굹�씠�엯�땲�떎.")
+67:                         }  
+68:                         %>  
+69:                     </td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+07-Apr-2023 15:42:26.515 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [30] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+27:     </thead>
+28:     <tbody>
+29:         <tr colspan="4">
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [31] 행에서 오류가 발생했습니다.
+student_name cannot be resolved to a variable
+28:     <tbody>
+29:         <tr colspan="4">
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [32] 행에서 오류가 발생했습니다.
+student_grade cannot be resolved to a variable
+29:         <tr colspan="4">
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [33] 행에서 오류가 발생했습니다.
+student_subject cannot be resolved to a variable
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+36:   </table>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [30] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+27:     </thead>
+28:     <tbody>
+29:         <tr colspan="4">
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [31] 행에서 오류가 발생했습니다.
+student_name cannot be resolved to a variable
+28:     <tbody>
+29:         <tr colspan="4">
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [32] 행에서 오류가 발생했습니다.
+student_grade cannot be resolved to a variable
+29:         <tr colspan="4">
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [33] 행에서 오류가 발생했습니다.
+student_subject cannot be resolved to a variable
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+36:   </table>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+07-Apr-2023 15:42:55.064 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [30] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+27:     </thead>
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [31] 행에서 오류가 발생했습니다.
+student_name cannot be resolved to a variable
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [32] 행에서 오류가 발생했습니다.
+student_grade cannot be resolved to a variable
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [33] 행에서 오류가 발생했습니다.
+student_subject cannot be resolved to a variable
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+36:   </table>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [30] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+27:     </thead>
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [31] 행에서 오류가 발생했습니다.
+student_name cannot be resolved to a variable
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [32] 행에서 오류가 발생했습니다.
+student_grade cannot be resolved to a variable
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [33] 행에서 오류가 발생했습니다.
+student_subject cannot be resolved to a variable
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+36:   </table>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+07-Apr-2023 15:42:59.660 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [30] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+27:     </thead>
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [31] 행에서 오류가 발생했습니다.
+student_name cannot be resolved to a variable
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [32] 행에서 오류가 발생했습니다.
+student_grade cannot be resolved to a variable
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [33] 행에서 오류가 발생했습니다.
+student_subject cannot be resolved to a variable
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+36:   </table>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [30] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+27:     </thead>
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [31] 행에서 오류가 발생했습니다.
+student_name cannot be resolved to a variable
+28:     <tbody>
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [32] 행에서 오류가 발생했습니다.
+student_grade cannot be resolved to a variable
+29:         <tr>
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [33] 행에서 오류가 발생했습니다.
+student_subject cannot be resolved to a variable
+30:             <td><%= student_number %></td>
+31:             <td><%= student_name %></td>
+32:             <td><%= student_grade %></td>
+33:             <td><%= student_subject %></td>
+34:         </tr>
+35:     </tbody>
+36:   </table>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+07-Apr-2023 15:47:26.706 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [38] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+35:     </thead>
+36:     <tbody>
+37:         <tr>
+38:             <td><%= student_number %></td>
+39:             <td><%= student_name %></td>
+40:             <td><%= student_grade %></td>
+41:             <td><%= student_subject %></td>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0407_프로젝트.jsp/01입력완료.jsp]의 [38] 행에서 오류가 발생했습니다.
+student_number cannot be resolved to a variable
+35:     </thead>
+36:     <tbody>
+37:         <tr>
+38:             <td><%= student_number %></td>
+39:             <td><%= student_name %></td>
+40:             <td><%= student_grade %></td>
+41:             <td><%= student_subject %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
