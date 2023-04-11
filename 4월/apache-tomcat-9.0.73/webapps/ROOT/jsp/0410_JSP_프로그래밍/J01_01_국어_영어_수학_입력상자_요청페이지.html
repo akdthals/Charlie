@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성적입력폼</title>
+        
+
+</head>
+<body>
+<div id="wrap">
+    
+    <form autocomplete="off" name="grade_form" id="gradeForm" method="get" action="./J01_02_국어_영어_수학_응답페이지.jsp">
+        <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td><input type="text" name="name" id="name" placeholder="아룸"     required autofocus></td>
+                    <td><input type="text" name="kor"  id="kor"  placeholder="국어점수" required autofocus></td>
+                    <td><input type="text" name="eng"  id="eng"  placeholder="영어점수" required autofocus></td>
+                    <td><input type="text" name="mat"  id="mat"  placeholder="수학점수" required autofocus></td>
+                </tr>                
+            </tbody>
+        </table>    
+        
+        <button type="submit">확인</button>
+        
+    </form>
+
+    <style>
+        * {margin:0;padding:0;vertical-align: middle;box-sizing: border-box;}
+        #wrap {width: 100%;padding: 100px 0;}
+        #wrap form {width: 600px;margin:0 auto;font-size: 14px;}
+        #wrap form table {border-collapse: collapse;width:100%;}
+        #wrap form table th,td{border:1px solid #ddd;height: 50px;}
+        #wrap form table th {background: #f0f0f0;}
+        #wrap form table td {text-align: center;}
+        #wrap form table td input {border:0;width:100%;height:100%;text-align: center;}
+        #wrap form table td input:focus {outline: 0;}
+        #wrap form button {width:100%;height:50px;margin: 50px 0 0 0;cursor: pointer;}
+
+    </style>
+
+</div>
+</body>
+</html>

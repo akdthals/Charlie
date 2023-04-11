@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{list-style: none;}
+        #wrap{width: 100%;width: 100%; text-align: center; justify-content: center; align-items: center;max-width: 1170px; margin: 0 auto;}
+        #wrap .title{width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #222;}
+        #wrap .title h1{width: 100%;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  padding: 0 0 50px 0;}
+        #wrap .title p{width: 100%;
+  text-align: right;
+  padding: 0 0 12px 0;}
+        #wrap .title p span{  font-size: 12px;
+  color: #626262;}
+        #wrap .title p span i{color: #ee6a7b;
+  vertical-align: top;
+  margin: 0 2px 0 0;}
+
+  #wrap .content ul li { padding: 8px 0;}
+  #wrap .content ul li div{padding: 0 50px;}
+  #wrap .content ul li div label{margin: 10px 0;}
+  #wrap .content ul li div label input{padding: 20px 30px;}
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div class="title">
+            <h1>회원가입</h1>
+            <p><span><i>*</i>필수입력사항</span></p>
+        </div>
+        <div class="content">
+            <form name="sign_up" id="signForm" method="post" action="./마켓컬리_회원가입폼.jsp">
+
+            
+            <ul>
+                <li>
+                    <div>
+                        <label for="">아이디<input type="text" name="user_id" id="userId" placeholder="아이디를 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">비밀번호<input type="text" name="user_pw" id="userPw" placeholder="비밀번호를 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">비밀번호확인<input type="text" name="user_pw_ok" id="userPwOk" placeholder="비밀번호 한번 더 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">이름<input type="text" name="user_name" id="userName" placeholder="이름을 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">이메일<input type="text" name="user_email" id="userEmail" placeholder="이메일을 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">휴대폰<input type="text" name="user_hp" id="userHp" placeholder="휴대폰번호를 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">주소<input type="text" name="user_addr" id="userAddr" placeholder="주소를 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">성별
+                            <input type="radio" name="men" value="남자" >남자
+                            <input type="radio" name="women" value="여자">여자
+                            <input type="radio" name="none" value="선택안함">선택안함
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">생년월일<input type="text" name="user_birth" id="userBirth" placeholder="생년월일을 입력하세요" required autofocus></label>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label for="">추가입력 사항
+                            <input type="checkbox" name="add_more" id="addMore" >친구초대 추천인 아이디
+                            <input type="checkbox" name="id" id="id">참여 이벤트명
+                        </label>
+                    </div>
+                </li>
+                <li class="hr">
+                    <hr/>
+                </li>
+                <li>
+                    <div>
+                        <label for="">약관동의                                    <input type="checkbox" name="user_agree" id="userAgree1" value="약관동의" required autofocus>약관동의</label>
+                        <label for="">전체동의함                                  <input type="checkbox" name="user_agree" id="userAgree2" value="전체동의함" required autofocus>전체동의함</label>
+                        <label for="">이용약관동의                                <input type="checkbox" name="user_agree" id="userAgree3" value="이용약관동의" required autofocus>이용약관동의</label>
+                        <label for="">개인정보 수집∙이용 동의                      <input type="checkbox" name="user_agree" id="userAgree4" value="개인정보 수집∙이용 동의" required autofocus>개인정보 수집∙이용 동의</label>
+                        <label for="">개인정보 수집∙이용 동의                      <input type="checkbox" name="user_agree" id="userAgree5" value="개인정보 수집∙이용 동의" required autofocus>개인정보 수집∙이용 동의</label>
+                        <label for="">무료배송, 할인쿠폰 등 혜택/정보 수신 동의     <input type="checkbox" name="user_agree" id="userAgree6" value="무료배송, 할인쿠폰 등 혜택/정보 수신 동의 " required autofocus>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</label>
+                        <label for="">본인은 만 14세 이상입니다.                   <input type="checkbox" name="user_agree" id="userAgree7" value="본인은 만 14세 이상입니다." required autofocus>본인은 만 14세 이상입니다.</label>
+                    </div>
+                </li>
+                <button>가입하기</button>
+            </ul>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

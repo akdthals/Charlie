@@ -1,15 +1,13 @@
-<%@
-    page
-    language="java"
-    contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"
+<%@ 
+  page 
+  language="java" 
+  contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8"
 %>
 
 <%
     String pageChange;
-
 %>
-
 
 <header id="header">
     <a href="?pageChange=./main_page.jsp">메인페이지</a>

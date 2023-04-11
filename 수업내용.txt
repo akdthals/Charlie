@@ -156,6 +156,13 @@ npm i react-daum-postcode 다운 => import DaumPostcode from 'react-daum-postcod
         System.out.printf("x4 = %8.4f\n", x4);
         System.out.printf("x5 = %s\n", x5 );
 
+0407 //////////////////////////////////////////////////////////////////////////
+required autofocus 한 세트 - 폼전송할때 필수 입력
+border-collapse: collapse - 자연스럽게 붙여주는
+colspan - 행에서 사이 칸을 만드는 (행 합침)
+
+0410 /////////////////////////////////////////////////////////////////////
+
 
 
 

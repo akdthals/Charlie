@@ -1,9 +1,8 @@
-
-<%@
-    page
-    language="java"
-    contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"
+<%@ 
+  page 
+  language="java" 
+  contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8"
 %>
 
 <!DOCTYPE html>
@@ -20,43 +19,44 @@
     <h1>JSP 전역 변수와 메서드 이용하기</h1>
     <hr>
     <%!
-
-        String companyName = "Green Computer Academy";
-
+        String companyName = "GREEN COMPUTER ACADEMY";
         
         // getter(게터)
-        // 호출용 메서드 
-        // 게터 메서드(함수)
-        // get변수명 카멜케이스 기법
-        
-        
+        // 호출용 메서드
+        // 게터 메서드(함수)        
+        // get변수명 카멜케이스 기법                  
         
         public String getCompanyName(){
-            companyName= "Green Computer Academy 풀스택 홍성민";
+            companyName = "GREEN COMPUTER ACADEMY 풀스택 문선종";
             return companyName;
         }
 
-        
         // setter(세터)
         // 세터 메서드(함수)
-        // 설정용(수정, 기록) 메서드
+        // 설정용(수정,기록) 메서드
         // set변수명 카멜케이스 기법
-        
+
         public String setCompanyName(String z){
             companyName = z;
             return companyName;
         }
 
-
-
-
     %>
 
     <h2>회사 이름은 <%= companyName %></h2>
 
-    <h1>게터메서드 호출 가져오기 실행 <em style="color:#fff; background:#c99; font-size:20px">[ <%= getCompanyName() %>]</em></h1>
+    <h1>게터메서드 호출 가져오기 실행 
+        <em style="color:#fff;background: #c99;font-size: 20px;">
+            [ <%= getCompanyName() %> ]
+        </em>
+    </h1>
 
-    <h1>세터 메서드 호출 설정 실행 <em style="color:#fff; background: #99c; font-size:20px">[<%= setCompanyName("자바 프로그래밍 JSP 세터메서드 설정하기") %>]</em></h1>
+    <h1>
+        세터메서드 호출 설정하기 실행 
+        <em style="color:#fff;background: #99c;font-size: 20px;">
+            [ <%= setCompanyName("자바 프로그래밍 JSP 세터메서드 설정하기") %> ]
+        </em>
+    </h1>
 
 
 </body>
