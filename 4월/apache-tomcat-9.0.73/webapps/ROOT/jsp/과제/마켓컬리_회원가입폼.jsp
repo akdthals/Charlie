@@ -47,7 +47,24 @@
     
 
 %>
+<%
+    String result ="";
+    result += "<p>아이디: " + user_id + "</p>";
+    result += "<p>비번: " + user_pw + "</p>";
+    result += "<p>비밀번호확인: " + user_pw_ok + "</p>";
+    result += "<p>이름: " + user_name + "</p>";
+    result += "<p>이메일: " + user_email + "</p>";
+    result += "<p>휴대폰: " + user_hp + "</p>";
+    result += "<p>주소: " + user_addr + "</p>";
+    result += "<p>성별: " + men + "</p>";
+    result += "<p>생년월일: " + user_birth + "</p>";
+    result += "<p>추가입력사항: " + add_more + "</p>";
+    result += "<p>약관동의: " + user_agree + "</p>";
 
+
+    out.println(result);
+
+%>
 <table>
     <thead>
         <tr>

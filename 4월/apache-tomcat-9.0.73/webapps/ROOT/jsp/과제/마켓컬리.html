@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js/jquery-2.2.4.min.js"></script>
     <style>
         *{list-style: none;}
         #wrap{width: 100%;width: 100%; text-align: center; justify-content: center; align-items: center;max-width: 1170px; margin: 0 auto;}
@@ -21,7 +22,7 @@
   padding: 0 0 12px 0;}
         #wrap .title p span{  font-size: 12px;
   color: #626262;}
-        #wrap .title p span i{color: #ee6a7b;
+        #wrap .title p span i{color: hsl(352, 80%, 67%);
   vertical-align: top;
   margin: 0 2px 0 0;}
 
@@ -114,10 +115,51 @@
                         <label for="">본인은 만 14세 이상입니다.                   <input type="checkbox" name="user_agree" id="userAgree7" value="본인은 만 14세 이상입니다." required autofocus>본인은 만 14세 이상입니다.</label>
                     </div>
                 </li>
-                <button>가입하기</button>
             </ul>
+            <button type="button" class="submit-btn">가입하기</button>
         </form>
+        <div class="result"></div>
         </div>
     </div>
+    <script>
+       
+       (($)=>{
+          
+          $('.submit-btn').on({
+              click(e){
+                  e.preventDefault();
+
+                  const formData= {
+                            userId : $('#userId').val(),
+                            userPw : $('#userPw').val(),
+                            userPwOk: $('#userPwOk').val(),
+                            userName: $('#userName').val(),
+                            userEmail: $('#userEmail').val(),
+                            userHp: $('#userHp').val(),
+                            userAddr: $('#userAddr').val(),
+                            men: $('#men').val(),
+                            userBirth: $('#userBirth').val(),
+                            addMore: $('#addMore').val(),
+                            
+                      }
+              
+                  $.ajax({
+                      url: './마켓컬리_회원가입폼.jsp',
+                      type: 'POST',
+                      date: formData,
+                      success(res){
+                          console.log( res );
+                          $('.result').html( res );
+                      },
+                      error(err){
+                          console.log('AJAX 실패!' + err);
+                      }
+                  });
+
+              }
+          });
+
+      })(jQuery);
+    </script>
 </body>
 </html>
