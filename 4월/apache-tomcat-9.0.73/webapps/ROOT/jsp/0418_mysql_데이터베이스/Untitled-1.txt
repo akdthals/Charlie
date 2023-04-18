@@ -1,0 +1,227 @@
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.01 sec)
+
+mysql> create database user;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| user               |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql>
+
+닷홈 관리자페이지
+cshong123.dothome.co.kr/myadmin
+cshong123   
+carfly88^^
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.01 sec)
+
+mysql> create database user;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| user               |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> create database cshong123;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| cshong123          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| user               |
+| world              |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> user
+
+데이터베이스 명(이름) user 안에 테이블을 만든다.
+그럴려면 먼저 사용을 허락 받는다
+나는 지금부터 user 데이터베이스를 사용합니다.
+
+use user;
+Database changed
+mysql>
+
+이동한 user 데이터 베이스안에 모든 테이블을 보여달라.
+현재는 아무것도 없다(비어있다). 왜냐면 방금 만든 데이터베이스 이기 때문에
+
+
+show tables;
+Empty set (0.01 sec)
+
+user 데이터베이스 안에 signin 테이블 만들기
+
+signin 테이블 설계
+
+필드명(field)   타입 
+user_id        가변형문자열(VARCHAR(16))
+user_pw        가변형문자열(VARCHAR(16))
+
+테이블 만들기
+CREATE TABLE signin (
+    user_id VARCHAR(16),
+    user_pw VARCHAR(16)
+);
+
+
+mysql> CREATE TABLE signin (
+    ->     user_id VARCHAR(16),
+    ->     user_pw VARCHAR(16)
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_user |
++----------------+
+| signin         |
++----------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+테이블 구조보기
+desc signin;
+
+mysql> desc signin;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| user_id | varchar(16) | YES  |     | NULL    |       |
+| user_pw | varchar(16) | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql>
+
+
+관계형 데이터베이스 
+SQL(Structure Query Language) 구조적 질의어 언어
+
+signin 테이블에
+데이터 넣고
+
+INSERT INTO signin(user_id, user_pw) 
+VALUES
+('cshong123', 'carfly88^^'),  // Record(레코드) == Tuple(튜플) == Row(행 == 줄)
+('asdqwe12', '12388^^'),
+('dsdwf', 'carfly88'),
+('fegsd', 'carfly22'),
+('bgwsdw', 'carfly11');
+
+
+mysql> INSERT INTO signin(user_id, user_pw)
+    -> VALUES
+    -> ('cshong123', 'carfly88^^'),
+    -> ('asdqwe12', '12388^^'),
+    -> ('dsdwf', 'carfly88'),
+    -> ('fegsd', 'carfly22'),
+    -> ('bgwsdw', 'carfly11');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+
+
+
+데이터 내용 확인하기(조회하기)
+
+SELECT * FROM signin;
+
+mysql> SELECT * FROM signin;
++-----------+------------+
+| user_id   | user_pw    |
++-----------+------------+
+| cshong123 | carfly88^^ |
+| asdqwe12  | 12388^^    |
+| dsdwf     | carfly88   |
+| fegsd     | carfly22   |
+| bgwsdw    | carfly11   |
++-----------+------------+
+5 rows in set (0.00 sec)
+
+
+
+JSP 웹페이지와 데이터베이스 연동(연결)
+
+JDBC 드라이브
+다운 받는다
+
+mysql-connector-java-8.0.25.jar (마이박스에 있음 다운 받기 학습 자료실에)
+
+톰캣서버로 이동
+apache-tomcat-9.0.73
+더블 클릭 열고 => 
+webapps(웹앱으로 이동) => 
+열고 => 
+examples => 
+열고 => 
+WEB-INF=> 
+열고 => 
+모두 복사 (classes, jsp, lib, tags, web.xml) => 
+../../ 나간다 => 
+ROOT(서버) 이동 => 
+열기 => 
+WEB-INF 들어간다 => 
+붙여 넣기 한다 (파일 덮어쓰기 누르기) => 
+lib => 
+열고 =>
+mysql-connector-java-8.0.25.jar 붙여넣기 => 
+../ 나간다.=> 
+jsp 작성 데이터베이스 연동하기
+
+
+jsp 제작
+
+
+

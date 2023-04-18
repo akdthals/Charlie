@@ -1,0 +1,984 @@
+18-Apr-2023 13:42:40.636 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Apr-2023 13:42:40.636 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Apr-2023 13:42:40.638 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@13c612bd')
+18-Apr-2023 13:53:06.891 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0418_JSP_프로그래밍/J01_쿠키설정_셋쿠키.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error on token ",", . expected
+26: 
+27:       // 泥ル쾲吏몄퓼�궎
+28:       Cookie newCookie1 = new Cookie("sungmin_cookie1", "泥ル쾲吏몄퓼�궎媛믪엯�땲�떎");
+29:       newCookie1,setPath("/");            // Path=/ �뙣�뒪�꽕�젙
+30:       newCookie1.setMaxAge(60*60*24*1); // 1�씪 荑좏궎 �꽕�젙
+31:       response.addCookie(newCookie1);  // 荑좏궎 異붽�
+32: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0418_JSP_프로그래밍/J01_쿠키설정_셋쿠키.jsp]의 [29] 행에서 오류가 발생했습니다.
+Syntax error on token ",", . expected
+26: 
+27:       // 泥ル쾲吏몄퓼�궎
+28:       Cookie newCookie1 = new Cookie("sungmin_cookie1", "泥ル쾲吏몄퓼�궎媛믪엯�땲�떎");
+29:       newCookie1,setPath("/");            // Path=/ �뙣�뒪�꽕�젙
+30:       newCookie1.setMaxAge(60*60*24*1); // 1�씪 荑좏궎 �꽕�젙
+31:       response.addCookie(newCookie1);  // 荑좏궎 異붽�
+32: 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:37:48.674 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:39:30.285 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:39:35.032 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [27] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+24: <body>
+25:     
+26:     <%!
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error on token ".", @ expected after this token
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "SimpleName" to complete QualifiedName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert "Identifier (" to complete MethodHeaderName
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+JSP 파일 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]의 [31] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodDeclaration
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+31:         out.println("�뜲�씠�꽣踰좎씠�뒪 �젒�냽 �꽦怨�");
+32: 
+33:         // signin �뀒�씠釉� �뜲�씠�꽣 媛��졇�삤湲�
+34:         // ResultSet rs = stmt.executeQuery("select * from signin");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:39:36.754 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [8]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+5:     contentType="text/html; charset=UTF-8"
+6:     pageEncoding="UTF-8"
+7: %>
+8: <%@
+9:     page 
+10:     import="java.sql.*"
+11: %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:39:39.855 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:39:40.587 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:42:14.069 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:42:14.915 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:43:09.593 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         //Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         //Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:43:57.159 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         //Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         //Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:43:57.451 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         //Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         //Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:44:44.664 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [27]에서 [/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_연동하기.jsp]을(를) 처리하는 중 예외 발생
+
+24: <body>
+25:     
+26:     <%
+27:         Class.forName("com.mysql.jdbc.Driver");
+28:         //Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "1234");
+29:         //Statement stmt = conn.createStatement();
+30: 
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1412)
+		at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1220)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:122)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at java.base/java.lang.Class.forName0(Native Method)
+		at java.base/java.lang.Class.forName(Class.java:315)
+		at org.apache.jsp.jsp._0418_005fmysql_005f데이터베이스.JDBC_005f데이터베이스_005f연동하기_jsp._jspService(JDBC_005f데이터베이스_005f연동하기_jsp.java:137)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+18-Apr-2023 17:48:23.206 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Apr-2023 17:48:23.207 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Apr-2023 17:48:23.209 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3ef41c66')
+18-Apr-2023 17:48:23.846 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+18-Apr-2023 17:48:23.846 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+18-Apr-2023 17:48:23.847 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1daf3b44')
+18-Apr-2023 17:48:29.360 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@1a12f88a')
+18-Apr-2023 17:48:29.364 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('38F141F5F5948824B2DAB1C60C9F0923')
+18-Apr-2023 17:48:58.139 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@1f20a4f4')
+18-Apr-2023 17:48:58.140 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@64ad67eb')

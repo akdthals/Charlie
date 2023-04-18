@@ -33,9 +33,6 @@ export default function Sub2Component() {
     },[]);
 
 
-
-
-
     React.useEffect(()=>{
         // 카테고리 버튼 클릭 이벤트 : 토글 기능
         $('.category-btn').on({

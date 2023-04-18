@@ -1,0 +1,44 @@
+17-Apr-2023 14:28:41.693 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.73
+17-Apr-2023 14:28:41.699 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Feb 27 2023 15:33:40 UTC
+17-Apr-2023 14:28:41.700 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.73.0
+17-Apr-2023 14:28:41.703 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 10
+17-Apr-2023 14:28:41.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+17-Apr-2023 14:28:41.712 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+17-Apr-2023 14:28:41.713 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Program Files\java\jdk-11
+17-Apr-2023 14:28:41.714 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          11+28
+17-Apr-2023 14:28:41.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Oracle Corporation
+17-Apr-2023 14:28:41.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73
+17-Apr-2023 14:28:41.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73
+17-Apr-2023 14:28:41.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Apr-2023 14:28:41.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+17-Apr-2023 14:28:41.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+17-Apr-2023 14:28:41.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Apr-2023 14:28:41.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Apr-2023 14:28:41.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\conf\logging.properties
+17-Apr-2023 14:28:41.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Apr-2023 14:28:41.720 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+17-Apr-2023 14:28:41.720 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Apr-2023 14:28:41.720 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+17-Apr-2023 14:28:41.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73
+17-Apr-2023 14:28:41.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73
+17-Apr-2023 14:28:41.722 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\temp
+17-Apr-2023 14:28:41.730 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 버전 [1.7.2]을(를) 사용한, APR 기반 Apache Tomcat Native 라이브러리 [1.2.36]을(를) 로드했습니다.
+17-Apr-2023 14:28:41.738 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR 용량정보들: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+17-Apr-2023 14:28:41.738 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL 설정: useAprConnector [false], useOpenSSL [true]
+17-Apr-2023 14:28:41.757 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL이 성공적으로 초기화되었습니다: [OpenSSL 1.1.1t  7 Feb 2023]
+17-Apr-2023 14:28:42.048 INFO [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+17-Apr-2023 14:28:42.073 INFO [main] org.apache.catalina.startup.Catalina.load [605] 밀리초 내에 서버가 초기화되었습니다.
+17-Apr-2023 14:28:42.134 INFO [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+17-Apr-2023 14:28:42.135 INFO [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.73]
+17-Apr-2023 14:28:42.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\docs]을(를) 배치합니다.
+17-Apr-2023 14:28:42.524 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\docs]에 대한 배치가 [376] 밀리초에 완료되었습니다.
+17-Apr-2023 14:28:42.525 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\examples]을(를) 배치합니다.
+17-Apr-2023 14:28:42.946 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\examples]에 대한 배치가 [420] 밀리초에 완료되었습니다.
+17-Apr-2023 14:28:42.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\host-manager]을(를) 배치합니다.
+17-Apr-2023 14:28:42.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\host-manager]에 대한 배치가 [48] 밀리초에 완료되었습니다.
+17-Apr-2023 14:28:43.002 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\manager]을(를) 배치합니다.
+17-Apr-2023 14:28:43.035 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\manager]에 대한 배치가 [33] 밀리초에 완료되었습니다.
+17-Apr-2023 14:28:43.038 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\ROOT]을(를) 배치합니다.
+17-Apr-2023 14:28:43.066 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\4월\apache-tomcat-9.0.73\webapps\ROOT]에 대한 배치가 [28] 밀리초에 완료되었습니다.
+17-Apr-2023 14:28:43.071 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+17-Apr-2023 14:28:43.117 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1041] 밀리초 내에 시작되었습니다.
