@@ -1,0 +1,78 @@
+* {margin: 0; padding: 0; vertical-align: middle; box-sizing: border-box;}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body {font: normal 15px/1 "맑은고딕", 'arial'; color: #444; background: #fff; }
+#wrap{
+    width: 100%;
+}
+#wrap .top {
+    width:100%; 
+    max-width: 1000px; 
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 0;
+}
+#wrap .top a {
+    text-decoration: none;
+    color: rgb(51, 153, 204, 0.7);
+    transition: all 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+}
+#wrap .top a:hover {
+    color: rgb(51, 153, 204, 1);
+}
+
+#wrap form{
+    padding: 150px 150px 100px 150px; 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 100px auto; 
+    border-radius: 5px;
+}
+#wrap form table {
+    width: 100%;
+}
+#wrap form table th,td{
+    width: 100%;
+}
+#wrap form table th{
+    height: 180px; 
+    font-size: 50px; 
+    color: #000;
+    font-weight: 500;
+}
+#wrap form table td{
+    height: 70px;
+}
+#wrap form table td input{
+    height: 150px;
+    font-size: 16px; 
+    width: 100%; 
+    background: #eee;
+    border-radius: 5px; 
+    border: 0;
+    outline: -1px solid transparent; 
+    transition: all 0.3s;
+    padding: 0 20px;
+}
+#wrap form table td input:focus{
+    outline: 1px solid #777;
+}
+#wrap form button{
+    margin: 50px 0 0 0;
+    width:100%;
+    height: 60px;
+    border:0;
+    background: rgba(68, 136, 170, 0.9);
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#wrap form button:hover{
+    background: rgba(68, 136, 170, 1);
+}

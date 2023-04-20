@@ -14,6 +14,14 @@ http://localhost:8080/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_
 192.168.40.146
 
 
+localhost:8080/jsp/0419_JSP_프로그래밍/index.jsp
+localhost:8080/jsp/0420_JSP_프로그래밍/todo_list_view.jsp
+
+
+ROOT\jsp\0420_JSP_프로그래밍
+
+\ 역슬래쉬 => / 슬래쉬
+
 
 과목등록하는 프로젝트
 
