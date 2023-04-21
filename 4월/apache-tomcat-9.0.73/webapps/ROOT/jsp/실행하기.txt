@@ -17,6 +17,8 @@ http://localhost:8080/jsp/0418_mysql_데이터베이스/JDBC_데이터베이스_
 localhost:8080/jsp/0419_JSP_프로그래밍/index.jsp
 localhost:8080/jsp/0420_JSP_프로그래밍/todo_list_view.jsp
 
+localhost:8080/jsp/0421_JSP_프로그래밍/index.jsp
+
 
 ROOT\jsp\0420_JSP_프로그래밍
 
