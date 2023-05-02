@@ -171,7 +171,7 @@ export default function IntroMainComponent() {
         let setId=0;
 
         function saleTimer(){
-            let start = new Date('2023-04-27 18:30:00'); //1. 타임세일 시작 싯점
+            let start = new Date('2023-04-30 18:30:00'); //1. 타임세일 시작 싯점
             let now = new Date();                        //2. 현재시간 
             start.setHours(start.getHours()+24);          //3. 시간+24 일일특가 시간 셋팅 세터함수
             // start.setHours(start.getHours()+24);         //3. 시간+24 일일특가 시간 셋팅 세터함수
