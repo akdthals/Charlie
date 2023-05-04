@@ -1,0 +1,884 @@
+03-May-2023 10:31:31.128 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-May-2023 10:31:31.128 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-May-2023 10:31:31.128 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6b739528')
+03-May-2023 10:31:31.799 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-May-2023 10:31:31.799 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-May-2023 10:31:31.799 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7fd8c559')
+03-May-2023 11:08:23.416 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@1fa1a80c')
+03-May-2023 11:08:23.430 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@13ab0ad8')
+03-May-2023 11:08:23.430 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@1cbaa0f1')
+03-May-2023 11:08:24.298 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('3842BDDFDE76A12647FA4D0C89839645')
+03-May-2023 11:08:39.493 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [2] 행에서 오류가 발생했습니다.
+page cannot be resolved to a type
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [3] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [4] 행에서 오류가 발생했습니다.
+contentType cannot be resolved to a variable
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [4] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [5] 행에서 오류가 발생했습니다.
+pageEncoding cannot be resolved to a variable
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+8: <!DOCTYPE html>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+8: <!DOCTYPE html>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [2] 행에서 오류가 발생했습니다.
+page cannot be resolved to a type
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [3] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [4] 행에서 오류가 발생했습니다.
+contentType cannot be resolved to a variable
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [4] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+1: <%
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [5] 행에서 오류가 발생했습니다.
+pageEncoding cannot be resolved to a variable
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+8: <!DOCTYPE html>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup.jsp]의 [5] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete Statement
+2:     page
+3:     language="java"
+4:     contentType="text/html; charset=UTF-8"
+5:     pageEncoding="UTF-8"
+6: %>
+7: 
+8: <!DOCTYPE html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:00:11.366 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:07:49.992 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [31] 행에서 오류가 발생했습니다.
+The method getUser_addr() is undefined for the type GaibDTO
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+34:         <script>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [31] 행에서 오류가 발생했습니다.
+The method getUser_addr() is undefined for the type GaibDTO
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+34:         <script>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:08:09.191 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [31] 행에서 오류가 발생했습니다.
+The method getUser_addr() is undefined for the type GaibDTO
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+34:         <script>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [31] 행에서 오류가 발생했습니다.
+The method getUser_addr() is undefined for the type GaibDTO
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+34:         <script>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:09:40.115 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+코드 생성된 자바 파일 [C:\Users\Administrator\Documents\풀스텍과정_홍성민\apache-tomcat-9.0.73\work\Catalina\localhost\ROOT\org\apache\jsp\jsp\_0503_005fMVC_005f모델링\회원가입_005f로그인_005f수정_005f삭제\gaib_005fsignup_005faction_jsp.java]의 [15] 행에서 오류가 발생했습니다.
+Only a type can be imported. java.io.Printwriter resolves to a package
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:10:11.521 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:10:57.750 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-May-2023 12:10:57.750 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-May-2023 12:10:57.750 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@41de5768')
+03-May-2023 12:10:58.314 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-May-2023 12:10:58.314 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-May-2023 12:10:58.314 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@8f2098e')
+03-May-2023 12:11:08.914 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@c4e79d3')
+03-May-2023 12:11:08.917 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('F480594E5E1FBE291E2A8A915766514B')
+03-May-2023 12:11:12.959 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@28a0eb79')
+03-May-2023 12:11:12.959 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@3669e88d')
+03-May-2023 12:11:13.759 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [29] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+26:        gaibDTO.getUser_id()==null
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_signup_action.jsp]의 [30] 행에서 오류가 발생했습니다.
+gaibDTo cannot be resolved
+27:     || gaibDTO.getUser_pw()==null
+28:     || gaibDTO.getUser_name()==null
+29:     || gaibDTo.getUser_hp()==null
+30:     || gaibDTo.getUser_email()==null
+31:     || gaibDTO.getUser_addr()==null
+32:     ){
+33: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 12:44:03.469 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('F480594E5E1FBE291E2A8A915766514B')
+03-May-2023 13:17:55.210 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('2B3034C09D0880E7ECBF1850EB26ED0A')
+03-May-2023 14:01:57.590 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_update_action.jsp]의 [40] 행에서 오류가 발생했습니다.
+The method update(GaibDTO) is undefined for the type GaibDAO
+37:     }
+38:     else{
+39:         GaibDAO gaibDAO = new GaibDAO();
+40:         int result = gaibDAO.update(gaibDTO);
+41: 
+42: %>        
+43:         <script>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_update_action.jsp]의 [40] 행에서 오류가 발생했습니다.
+The method update(GaibDTO) is undefined for the type GaibDAO
+37:     }
+38:     else{
+39:         GaibDAO gaibDAO = new GaibDAO();
+40:         int result = gaibDAO.update(gaibDTO);
+41: 
+42: %>        
+43:         <script>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 14:02:50.076 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [40]에서 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_update_action.jsp]을(를) 처리하는 중 예외 발생
+
+37:     }
+38:     else{
+39:         GaibDAO gaibDAO = new GaibDAO();
+40:         int result = gaibDAO.update(gaibDTO);
+41: 
+42: %>        
+43:         <script>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NoSuchMethodError: gaib.GaibDAO.update(Lgaib/GaibDTO;)I
+		at org.apache.jsp.jsp._0503_005fMVC_005f모델링.회원가입_005f로그인_005f수정_005f삭제.gaib_005fupdate_005faction_jsp._jspService(gaib_005fupdate_005faction_jsp.java:172)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+03-May-2023 14:03:04.851 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [40]에서 [/jsp/0503_MVC_모델링/회원가입_로그인_수정_삭제/gaib_update_action.jsp]을(를) 처리하는 중 예외 발생
+
+37:     }
+38:     else{
+39:         GaibDAO gaibDAO = new GaibDAO();
+40:         int result = gaibDAO.update(gaibDTO);
+41: 
+42: %>        
+43:         <script>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NoSuchMethodError: gaib.GaibDAO.update(Lgaib/GaibDTO;)I
+		at org.apache.jsp.jsp._0503_005fMVC_005f모델링.회원가입_005f로그인_005f수정_005f삭제.gaib_005fupdate_005faction_jsp._jspService(gaib_005fupdate_005faction_jsp.java:172)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)

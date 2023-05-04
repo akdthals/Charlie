@@ -1,0 +1,82 @@
+회원관리 테이블
+gaib_table
+
+CREATE TABLE gaib_table(
+    idx             int             NOT NULL    PRIMARY KEY      AUTO_INCREMENT,
+    user_id         VARCHAR(16)     NOT NULL, 
+    user_pw         VARCHAR(16)     NOT NULL,
+    user_name       VARCHAR(30)     NOT NULL,
+    user_hp         VARCHAR(13)     NOT NULL,
+    user_email      VARCHAR(250), 
+    user_addr       VARCHAR(250) 
+);
+
+
+INSERT
+UPDATE
+SELECT
+DELETE
+
+
+DTO
+멤버변수
+user_id
+user_pw
+user_name
+user_hp
+user_email
+user_addr
+
+user_id,user_pw,user_name,user_hp,user_email,user_addr
+
+
+GaibDTO.java
+GaibDAO.java
+
+
+DAO
+package gaib;
+import java.sql.*;
+import java.util.*;
+
+
+public class GaibDAO {
+    
+    private Connection conn =null;
+    private PreparedStatement ps =null;
+    private ResultSet rs = null;
+
+   public GaibDAO(){
+        try{
+            String dBURL="jdbc:mysql://localhost:3306/user";
+            String dBID="root";
+            String dBPW = "1234";
+
+            Class.forName("com.mysql.jdbc.Driver");
+            conn = DriverManager.getConnection(dBURL, dBID, dBPW);
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+   }
+
+    signup
+    
+    // 회원 가입 메서드     : signup
+    // 회원 가입 폼        : gaib_signup.jsp
+    // 회원 가입 폼 액션파일: gaib_signup_action.jsp
+
+
+
+
+    // 회원 로그인 메서드 : signin
+    // 회원정보 수정 메서드 : update
+    // 회원 가입 폼        : gaib_update.jsp
+    // 회원 가입 폼 액션파일: gaib_update_action.jsp
+    
+
+    // 회원정보 삭제 메서드 : delete
+    
+}
+

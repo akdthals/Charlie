@@ -161,7 +161,41 @@ required autofocus 한 세트 - 폼전송할때 필수 입력
 border-collapse: collapse - 자연스럽게 붙여주는
 colspan - 행에서 사이 칸을 만드는 (행 합침)
 
-0410 /////////////////////////////////////////////////////////////////////
+0502  /////////////////////////////////////////////////////////////////////
+JSP 회원가입 데이터 만들기
+테이블 만드는 형식
+CREATE TABLE member_table(
+    user_id     varchar(16)      NoT NULL    PRIMARY KEY,
+    user_pw     varchar(16)      NoT NULL,    
+    user_name   varchar(30)      NoT NULL,    
+    user_hp     varchar(13)      NoT NULL,    
+    user_email  varchar(250)     NoT NULL    
+)
+
+테이블 구조 보기 => desc member_table;
+
+폴더 만들고 파일 DTO.java 만들기
+
+DAO 파일 만들기 =>
+
+데이터베이스 URL: 'jdbc:데이터베이스종류://로칼호스트:포트번호/데이터베이스이름'
+데이터베이스 URL: 'jdbc:mysql://localhost:3306/user'
+데이터베이스 이름:'user'
+데이터베이스 테이블이름 : 'member_table'
+데이터베이스 아이디: 'root'
+데이터베이스 비밀번호: '1234'
+
+// jdbc 드라이버 설정
+Class.forName('com.mysql.jdbc.Driver');
+
+// Connection 데이터베이스 컨넥션(DBURL, DB아이디, DB비밀번호)
+private Connection conn=null;
+
+String DBURL = "jdbc:mysql://localhost:3306/user";
+String DBID = "root";
+String DBPW = "1234";
+
+conn = DriverManager.getConnection(DBURL, DBID, DBPW);
 
 
 
