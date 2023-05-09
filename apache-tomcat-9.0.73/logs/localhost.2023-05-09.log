@@ -1,0 +1,167 @@
+09-May-2023 09:33:20.256 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 09:33:20.256 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 09:33:20.256 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5aa360ea')
+09-May-2023 09:33:21.331 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 09:33:21.332 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 09:33:21.334 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2b8bd798')
+09-May-2023 09:33:21.642 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@a71b1be')
+09-May-2023 09:33:21.647 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('A32DE45D2BEAC0F90A9A53500E5BF137')
+09-May-2023 09:33:58.416 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('A32DE45D2BEAC0F90A9A53500E5BF137', 'user_id', 'cshong1')
+09-May-2023 09:34:03.771 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@37ed6a03')
+09-May-2023 09:34:03.771 INFO [http-nio-8080-exec-4] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@735f3cd')
+09-May-2023 11:34:00.543 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 11:34:00.543 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 11:34:00.543 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5f577419')
+09-May-2023 11:34:01.152 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 11:34:01.152 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 11:34:01.152 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6c6366cf')
+09-May-2023 11:34:44.936 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@5b95e3d1')
+09-May-2023 11:34:44.951 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@4a9a5e6')
+09-May-2023 11:34:44.954 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@399453')
+09-May-2023 11:34:45.740 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('1496F834E311DC10019072212EEABB17')
+09-May-2023 12:05:04.527 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('1496F834E311DC10019072212EEABB17')
+09-May-2023 13:30:53.803 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 13:30:53.803 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 13:30:53.803 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6b739528')
+09-May-2023 13:30:54.682 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 13:30:54.682 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 13:30:54.684 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7fd8c559')
+09-May-2023 13:31:17.245 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@3be4c8d3')
+09-May-2023 13:31:17.248 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('81CB54119B8F9E1A7446EC0AFD7BCA22')
+09-May-2023 14:01:57.978 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('81CB54119B8F9E1A7446EC0AFD7BCA22')
+09-May-2023 14:04:50.163 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@464645e4')
+09-May-2023 14:04:50.164 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@1d876ab2')
+09-May-2023 14:04:50.958 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_main.jsp]의 [94] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+91:             list = userDAO.getJoinList();
+92: 
+93:             if(list.size()==0){
+94:                 out.println("<script>alert('議고쉶�궡�슜�씠 �뾾�뒿�땲�떎.')</script>")
+95:             }
+96:             else{
+97:                     for(UserDTO item : list){
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_main.jsp]의 [94] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+91:             list = userDAO.getJoinList();
+92: 
+93:             if(list.size()==0){
+94:                 out.println("<script>alert('議고쉶�궡�슜�씠 �뾾�뒿�땲�떎.')</script>")
+95:             }
+96:             else{
+97:                     for(UserDTO item : list){
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 14:09:05.182 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_main.jsp]의 [95] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+92:             list = userDAO.getJoinList();
+93: 
+94:             if(list.size()==0){
+95:                 out.println("<script>alert('議고쉶�궡�슜�씠 �뾾�뒿�땲�떎.')</script>")
+96:             }
+97:             else{
+98:                     for(UserDTO item : list){
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_main.jsp]의 [95] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+92:             list = userDAO.getJoinList();
+93: 
+94:             if(list.size()==0){
+95:                 out.println("<script>alert('議고쉶�궡�슜�씠 �뾾�뒿�땲�떎.')</script>")
+96:             }
+97:             else{
+98:                     for(UserDTO item : list){
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 14:09:52.633 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('13ECFD53034A7352204143D3C667AA08')
+09-May-2023 14:12:17.419 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('13ECFD53034A7352204143D3C667AA08', 'user_id', 'cshong333')
+09-May-2023 14:15:02.102 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('13ECFD53034A7352204143D3C667AA08')
+09-May-2023 14:15:02.102 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeRemoved('13ECFD53034A7352204143D3C667AA08', 'user_id', 'cshong333')
+09-May-2023 14:15:02.171 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('2034C11065A4E7A21CC24621F2F17089')
+09-May-2023 14:15:10.397 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('2034C11065A4E7A21CC24621F2F17089', 'user_id', 'cshong333')

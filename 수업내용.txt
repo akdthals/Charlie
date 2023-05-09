@@ -164,13 +164,19 @@ colspan - 행에서 사이 칸을 만드는 (행 합침)
 0502  /////////////////////////////////////////////////////////////////////
 JSP 회원가입 데이터 만들기
 테이블 만드는 형식
-CREATE TABLE member_table(
-    user_id     varchar(16)      NoT NULL    PRIMARY KEY,
-    user_pw     varchar(16)      NoT NULL,    
-    user_name   varchar(30)      NoT NULL,    
-    user_hp     varchar(13)      NoT NULL,    
-    user_email  varchar(250)     NoT NULL    
-)
+create table kurly_table(
+    idx           int             NOT NULL       AUTO_INCREMENT,
+    user_id       varchar(16)     not null,
+    user_pw       varchar(16)     not null,
+    user_name     varchar(30)     not null,
+    user_email    varchar(250)    not null,
+    user_hp       varchar(13)     not null,
+    user_addr     varchar(250)    not null,
+    user_gender   varchar(4),
+    user_birth    varchar(10),
+    gaib_date     TIMESTAMP         DEFAULT        CURRENT_TIMESTAMP,
+    PRIMARY KEY(idx, user_id, user_email)
+);
 
 테이블 구조 보기 => desc member_table;
 
@@ -196,6 +202,19 @@ String DBID = "root";
 String DBPW = "1234";
 
 conn = DriverManager.getConnection(DBURL, DBID, DBPW);
+
+0509 ////////////////////////////////////////////////////////////////////////////
+html jsp 차이 디렉티브 헤더 코딩이 있고 없고 
+jsp 는 자바가 들어가는 경우
+
+개발자가 자바 소스작성(코딩) => 
+서블릿소스.java[UserDAO.java, UserDTO.java] =>
+[컴파일 번역] => 
+자바 클래스 생성[UserDAO.java, UserDTO.java](이진파일 bin)
+=> 등록 = > 서블릿 컨테이너[톰캣] => 실행 & 연동 데이터베이스[JDBC] <=> [데이터베이스]
+=> 서블릿 ㅘㄴ경설정 담당 파일 WEB.XML
+=> 서블릿(요청(HTTP OR  HTTPS REQUST)을 받으면 응답(HTTP OR HTTPS RESPONSE)  서블릿 메서드(CRUD)가 실행)
+=> HTML(HTTP 통신)
 
 
 
