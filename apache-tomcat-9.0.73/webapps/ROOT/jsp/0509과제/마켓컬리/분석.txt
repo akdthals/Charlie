@@ -1,0 +1,32 @@
+CREATE TABLE kurly(
+  idx INT NOT NULL AUTO_INCREMENT,
+  id     VARCHAR(16)   NOT NULL,    
+  pw     VARCHAR(30)   NOT NULL,
+  name   VARCHAR(16)   NOT NULL,
+  email  VARCHAR(250)  NOT NULL,
+  hp     VARCHAR(13)   NOT NULL,
+  address   VARCHAR(16)   NOT NULL,
+  gender VARCHAR(16),
+  birth  VARCHAR(16),
+  add    VARCHAR(250),
+  chk    VARCHAR(250) NOT NULL,
+  gaib_date     TIMESTAMP         DEFAULT        CURRENT_TIMESTAMP,
+  PRIMARY KEY(idx, user_id, user_email)
+);
+
+
+create table kurly(
+    idx           int             NOT NULL       AUTO_INCREMENT,
+    user_id       varchar(16)     not null,
+    user_pw       varchar(16)     not null,
+    user_name     varchar(30)     not null,
+    user_email    varchar(250)    not null,
+    user_hp       varchar(13)     not null,
+    user_address     varchar(250)    not null,
+    user_gender   varchar(4),
+    user_birth    varchar(10),
+    user_add     varchar(250),
+    user_chk      varchar(250)    not null,
+    gaib_date     TIMESTAMP         DEFAULT        CURRENT_TIMESTAMP,
+    PRIMARY KEY(idx, user_id, user_email)
+);

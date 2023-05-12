@@ -165,3 +165,1127 @@ Stacktrace:
 09-May-2023 14:15:02.102 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeRemoved('13ECFD53034A7352204143D3C667AA08', 'user_id', 'cshong333')
 09-May-2023 14:15:02.171 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('2034C11065A4E7A21CC24621F2F17089')
 09-May-2023 14:15:10.397 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('2034C11065A4E7A21CC24621F2F17089', 'user_id', 'cshong333')
+09-May-2023 14:38:53.066 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 14:38:53.067 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 14:38:53.068 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@41de5768')
+09-May-2023 14:38:54.367 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+09-May-2023 14:38:54.367 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+09-May-2023 14:38:54.368 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@8f2098e')
+09-May-2023 14:38:55.973 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.runtime.JspApplicationContextImpl', 'org.apache.jasper.runtime.JspApplicationContextImpl@4aee0fe8')
+09-May-2023 14:38:55.976 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('090DDA5122318872FA862807E3FB9949')
+09-May-2023 14:41:10.283 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.ELInterpreter', 'org.apache.jasper.compiler.ELInterpreterFactory$DefaultELInterpreter@2e49325e')
+09-May-2023 14:41:10.284 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('org.apache.jasper.compiler.StringInterpreter', 'org.apache.jasper.compiler.StringInterpreterFactory$DefaultStringInterpreter@437c160b')
+09-May-2023 14:41:11.224 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [49]에서 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_update.jsp]을(를) 처리하는 중 예외 발생
+
+46:                     <li><input maxlength="13" autofocus required  type="text" name="user_hp" id="userHp" placeholder="�닔�젙 �쑕���룿�쓣 �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_hp()%>"></li>
+47:                     <li><input maxlength="250" autofocus required type="text" name="user_addr" id="userAddr" placeholder="�닔�젙 二쇱냼瑜� �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_addr()%>"></li>
+48:                     <li>
+49:                         <input type="radio" name="user_gender" id="userMale"  value="�궓�꽦" <% if(userDTO.getUser_gender().equals("�궓�꽦")){ %> checked="checked"<% } %> />
+50:                         <label for="userMale">�궓�꽦</label>
+51:                         <input type="radio" name="user_gender" id="userFeMale"  value="�뿬�꽦" <% if(userDTO.getUser_gender().equals("�뿬�꽦")){ %> checked="checked"<% } %> />
+52:                         <label for="userFeMale">�뿬�꽦</label>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException
+		at org.apache.jsp.jsp._0509_005fMVC_005f모델링_005f프로젝트.쇼핑몰고객관리.kurly_005fuser_005fupdate_jsp._jspService(kurly_005fuser_005fupdate_jsp.java:179)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 14:41:37.181 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [49]에서 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_update.jsp]을(를) 처리하는 중 예외 발생
+
+46:                     <li><input maxlength="13" autofocus required  type="text" name="user_hp" id="userHp" placeholder="�닔�젙 �쑕���룿�쓣 �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_hp()%>"></li>
+47:                     <li><input maxlength="250" autofocus required type="text" name="user_addr" id="userAddr" placeholder="�닔�젙 二쇱냼瑜� �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_addr()%>"></li>
+48:                     <li>
+49:                         <input type="radio" name="user_gender" id="userMale"  value="�궓�꽦" <% if(userDTO.getUser_gender().equals("�궓�꽦")){ %> checked="checked"<% } %> />
+50:                         <label for="userMale">�궓�꽦</label>
+51:                         <input type="radio" name="user_gender" id="userFeMale"  value="�뿬�꽦" <% if(userDTO.getUser_gender().equals("�뿬�꽦")){ %> checked="checked"<% } %> />
+52:                         <label for="userFeMale">�뿬�꽦</label>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException
+		at org.apache.jsp.jsp._0509_005fMVC_005f모델링_005f프로젝트.쇼핑몰고객관리.kurly_005fuser_005fupdate_jsp._jspService(kurly_005fuser_005fupdate_jsp.java:179)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 14:42:09.367 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [49]에서 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_update.jsp]을(를) 처리하는 중 예외 발생
+
+46:                     <li><input maxlength="13" autofocus required  type="text" name="user_hp" id="userHp" placeholder="�닔�젙 �쑕���룿�쓣 �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_hp()%>"></li>
+47:                     <li><input maxlength="250" autofocus required type="text" name="user_addr" id="userAddr" placeholder="�닔�젙 二쇱냼瑜� �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_addr()%>"></li>
+48:                     <li>
+49:                         <input type="radio" name="user_gender" id="userMale"  value="�궓�꽦" <% if(userDTO.getUser_gender().equals("�궓�꽦")){ %> checked="checked"<% } %> />
+50:                         <label for="userMale">�궓�꽦</label>
+51:                         <input type="radio" name="user_gender" id="userFeMale"  value="�뿬�꽦" <% if(userDTO.getUser_gender().equals("�뿬�꽦")){ %> checked="checked"<% } %> />
+52:                         <label for="userFeMale">�뿬�꽦</label>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException
+		at org.apache.jsp.jsp._0509_005fMVC_005f모델링_005f프로젝트.쇼핑몰고객관리.kurly_005fuser_005fupdate_jsp._jspService(kurly_005fuser_005fupdate_jsp.java:179)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 14:42:10.220 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [행 [49]에서 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_update.jsp]을(를) 처리하는 중 예외 발생
+
+46:                     <li><input maxlength="13" autofocus required  type="text" name="user_hp" id="userHp" placeholder="�닔�젙 �쑕���룿�쓣 �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_hp()%>"></li>
+47:                     <li><input maxlength="250" autofocus required type="text" name="user_addr" id="userAddr" placeholder="�닔�젙 二쇱냼瑜� �엯�젰�븯�꽭�슂" value="<%=userDTO.getUser_addr()%>"></li>
+48:                     <li>
+49:                         <input type="radio" name="user_gender" id="userMale"  value="�궓�꽦" <% if(userDTO.getUser_gender().equals("�궓�꽦")){ %> checked="checked"<% } %> />
+50:                         <label for="userMale">�궓�꽦</label>
+51:                         <input type="radio" name="user_gender" id="userFeMale"  value="�뿬�꽦" <% if(userDTO.getUser_gender().equals("�뿬�꽦")){ %> checked="checked"<% } %> />
+52:                         <label for="userFeMale">�뿬�꽦</label>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	java.lang.NullPointerException
+		at org.apache.jsp.jsp._0509_005fMVC_005f모델링_005f프로젝트.쇼핑몰고객관리.kurly_005fuser_005fupdate_jsp._jspService(kurly_005fuser_005fupdate_jsp.java:179)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 14:42:46.322 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('090DDA5122318872FA862807E3FB9949', 'user_id', 'cshong333')
+09-May-2023 15:13:59.361 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('090DDA5122318872FA862807E3FB9949')
+09-May-2023 15:13:59.377 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeRemoved('090DDA5122318872FA862807E3FB9949', 'user_id', 'cshong333')
+09-May-2023 15:44:47.148 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [72] 행에서 오류가 발생했습니다.
+UserDAO cannot be resolved to a type
+69:                 <th>媛��엯�씪</th>
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [72] 행에서 오류가 발생했습니다.
+UserDAO cannot be resolved to a type
+69:                 <th>媛��엯�씪</th>
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [73] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [73] 행에서 오류가 발생했습니다.
+UserDTO cannot be resolved to a type
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error on token "조회내역이", [ expected
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+The method 없습니다(String) is undefined for the type kurly_005fuser_005fmain_jsp
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ( expected
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error, insert "]" to complete ArrayAccess
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [77] 행에서 오류가 발생했습니다.
+UserDTO cannot be resolved to a type
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+79:                         <th>
+80:                             <td><%= dto.getUser_id() %></td>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [72] 행에서 오류가 발생했습니다.
+UserDAO cannot be resolved to a type
+69:                 <th>媛��엯�씪</th>
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [72] 행에서 오류가 발생했습니다.
+UserDAO cannot be resolved to a type
+69:                 <th>媛��엯�씪</th>
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [73] 행에서 오류가 발생했습니다.
+List cannot be resolved to a type
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [73] 행에서 오류가 발생했습니다.
+UserDTO cannot be resolved to a type
+70:             </tr>
+71:             <%
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error on token "조회내역이", [ expected
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+The method 없습니다(String) is undefined for the type kurly_005fuser_005fmain_jsp
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ( expected
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error, insert "]" to complete ArrayAccess
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [75] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+72:                 UserDAO userDAO = new UserDAO();
+73:                 List<UserDTO> list = userDAO.getJoinList();
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [77] 행에서 오류가 발생했습니다.
+UserDTO cannot be resolved to a type
+74:                     if(list.size() == 0){
+75:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+76:                     }
+77:                     for(UserDTO dto : list){
+78:             %>
+79:                         <th>
+80:                             <td><%= dto.getUser_id() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 15:45:21.367 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token "조회내역이", [ expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The method 없습니다(String) is undefined for the type kurly_005fuser_005fmain_jsp
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ( expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert "]" to complete ArrayAccess
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token "조회내역이", [ expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The method 없습니다(String) is undefined for the type kurly_005fuser_005fmain_jsp
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ( expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert "]" to complete ArrayAccess
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 15:45:24.191 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.jsp._0509_005fMVC_005f모델링_005f프로젝트_005f혼자하기.쇼핑몰고객관리.kurly_005fuser_005fmain_jsp]을(를) 발생시켰습니다.
+	java.lang.ClassNotFoundException: org.apache.jsp.jsp._0509_005fMVC_005f모델링_005f프로젝트_005f혼자하기.쇼핑몰고객관리.kurly_005fuser_005fmain_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:471)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:129)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:58)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:149)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:192)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:413)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 15:45:28.021 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token "조회내역이", [ expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The method 없습니다(String) is undefined for the type kurly_005fuser_005fmain_jsp
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ( expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert "]" to complete ArrayAccess
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The type of the expression must be an array type but it resolved to String
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token "조회내역이", [ expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+The method 없습니다(String) is undefined for the type kurly_005fuser_005fmain_jsp
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error on token ".", ( expected
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert "]" to complete ArrayAccess
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ")" to complete MethodInvocation
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_main.jsp]의 [79] 행에서 오류가 발생했습니다.
+Syntax error, insert ";" to complete BlockStatements
+76:                 UserDAO userDAO = new UserDAO();
+77:                 List<UserDTO> list = userDAO.getJoinList();
+78:                     if(list.size() == 0){
+79:                         out.println("<script>alert("議고쉶�궡�뿭�씠 �뾾�뒿�땲�떎.")</script>")
+80:                     }
+81:                     for(UserDTO dto : list){
+82:             %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 15:46:02.263 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('EAC442E4F79D41467039028F73D60D73')
+09-May-2023 15:47:43.195 INFO [http-nio-8080-exec-9] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeAdded('EAC442E4F79D41467039028F73D60D73', 'user_id', 'cshong333')
+09-May-2023 15:47:48.995 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_update.jsp]의 [40] 행에서 오류가 발생했습니다.
+userDTO cannot be resolved
+37:                 <a href="./kurly_user_delete.jsp">�궘�젣</a>
+38:                 <form name="update" autocomplete="off" id="update" method="post" action="./kurly_user_update_action.jsp">
+39:                     <ul>
+40:                         <li><%= userDTO.getUser_id() %></li>
+41:                         <li class="hide"><input maxlength="16" autofocus required type="text" name="user_id" id="userId" placeholder="�븘�씠�뵒瑜� �엯�젰�븯�꽭�슂" value=<%= loginId %>></li>
+42:                         <li><input maxlength="16" autofocus required type="password" name="user_pw" id="userPw" placeholder="�닔�젙 鍮꾨�踰덊샇瑜� �엯�젰�븯�꽭�슂"></li>
+43:                         <li><input maxlength="30" autofocus required type="text" name="user_name" id="userName" placeholder="�닔�젙 �씠由꾩쓣 �엯�젰�븯�꽭�슂"></li>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_update.jsp]의 [40] 행에서 오류가 발생했습니다.
+userDTO cannot be resolved
+37:                 <a href="./kurly_user_delete.jsp">�궘�젣</a>
+38:                 <form name="update" autocomplete="off" id="update" method="post" action="./kurly_user_update_action.jsp">
+39:                     <ul>
+40:                         <li><%= userDTO.getUser_id() %></li>
+41:                         <li class="hide"><input maxlength="16" autofocus required type="text" name="user_id" id="userId" placeholder="�븘�씠�뵒瑜� �엯�젰�븯�꽭�슂" value=<%= loginId %>></li>
+42:                         <li><input maxlength="16" autofocus required type="password" name="user_pw" id="userPw" placeholder="�닔�젙 鍮꾨�踰덊샇瑜� �엯�젰�븯�꽭�슂"></li>
+43:                         <li><input maxlength="30" autofocus required type="text" name="user_name" id="userName" placeholder="�닔�젙 �씠由꾩쓣 �엯�젰�븯�꽭�슂"></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 15:48:17.571 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_update.jsp]의 [43] 행에서 오류가 발생했습니다.
+userDTO cannot be resolved
+40:                 <a href="./kurly_user_delete.jsp">�궘�젣</a>
+41:                 <form name="update" autocomplete="off" id="update" method="post" action="./kurly_user_update_action.jsp">
+42:                     <ul>
+43:                         <li><%= userDTO.getUser_id() %></li>
+44:                         <li class="hide"><input maxlength="16" autofocus required type="text" name="user_id" id="userId" placeholder="�븘�씠�뵒瑜� �엯�젰�븯�꽭�슂" value=<%= loginId %>></li>
+45:                         <li><input maxlength="16" autofocus required type="password" name="user_pw" id="userPw" placeholder="�닔�젙 鍮꾨�踰덊샇瑜� �엯�젰�븯�꽭�슂"></li>
+46:                         <li><input maxlength="30" autofocus required type="text" name="user_name" id="userName" placeholder="�닔�젙 �씠由꾩쓣 �엯�젰�븯�꽭�슂"></li>
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트_혼자하기/쇼핑몰고객관리/kurly_user_update.jsp]의 [43] 행에서 오류가 발생했습니다.
+userDTO cannot be resolved
+40:                 <a href="./kurly_user_delete.jsp">�궘�젣</a>
+41:                 <form name="update" autocomplete="off" id="update" method="post" action="./kurly_user_update_action.jsp">
+42:                     <ul>
+43:                         <li><%= userDTO.getUser_id() %></li>
+44:                         <li class="hide"><input maxlength="16" autofocus required type="text" name="user_id" id="userId" placeholder="�븘�씠�뵒瑜� �엯�젰�븯�꽭�슂" value=<%= loginId %>></li>
+45:                         <li><input maxlength="16" autofocus required type="password" name="user_pw" id="userPw" placeholder="�닔�젙 鍮꾨�踰덊샇瑜� �엯�젰�븯�꽭�슂"></li>
+46:                         <li><input maxlength="30" autofocus required type="text" name="user_name" id="userName" placeholder="�닔�젙 �씠由꾩쓣 �엯�젰�븯�꽭�슂"></li>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)
+09-May-2023 17:09:11.934 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionDestroyed('EAC442E4F79D41467039028F73D60D73')
+09-May-2023 17:09:11.944 INFO [Catalina-utility-2] org.apache.catalina.core.ApplicationContext.log SessionListener: attributeRemoved('EAC442E4F79D41467039028F73D60D73', 'user_id', 'cshong333')
+09-May-2023 17:48:23.620 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log SessionListener: sessionCreated('F10070F0C759D2E5E1A6D51D989457EF')
+09-May-2023 18:01:22.175 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke 경로 []의 컨텍스트 내의 서블릿 [jsp]을(를) 위한 Servlet.service() 호출이, 근본 원인(root cause)과 함께, 예외 [JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_ArrayList.jsp]의 [15] 행에서 오류가 발생했습니다.
+list cannot be resolved to a type
+12: 
+13: 
+14: <%
+15:     ArrayList<String> list = new ArrayList<list>();
+16:     list.add("�뵺湲�");
+17:     list.add("�궗怨�");
+18:     list.add("�닔諛�");
+
+
+Stacktrace:]을(를) 발생시켰습니다.
+	org.apache.jasper.JasperException: JSP를 위한 클래스를 컴파일할 수 없습니다.: 
+
+JSP 파일 [/jsp/0509_MVC_모델링_프로젝트/쇼핑몰고객관리/kurly_user_ArrayList.jsp]의 [15] 행에서 오류가 발생했습니다.
+list cannot be resolved to a type
+12: 
+13: 
+14: <%
+15:     ArrayList<String> list = new ArrayList<list>();
+16:     list.add("�뵺湲�");
+17:     list.add("�궗怨�");
+18:     list.add("�닔諛�");
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:531)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:596)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.filters.HttpHeaderSecurityFilter.doFilter(HttpHeaderSecurityFilter.java:126)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:834)

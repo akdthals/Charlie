@@ -1,0 +1,15 @@
+아이디
+비번
+비번확인
+비번분실시
+전화번호
+이메일
+
+CREATE TABLE member_table (
+    user_id     VARCHAR(16)     NOT NULL    PRIMARY KEY,
+    user_pw     VARCHAR(16)     NOT NULL,    
+    user_pwOk     VARCHAR(16)     NOT NULL,    
+    user_find   VARCHAR(30)     NOT NULL,   
+    user_hp     VARCHAR(13)     NOT NULL,    
+    user_email  VARCHAR(250)    NOT NULL        
+)

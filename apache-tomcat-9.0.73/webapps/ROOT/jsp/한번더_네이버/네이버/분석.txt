@@ -1,0 +1,27 @@
+create table naver(
+    menu1 varchar(16) not null primary key,
+    menu2 varchar(250) not null,
+    menu3 varchar(250) not null,
+    menu4 varchar(250) not null,
+    menu5 varchar(250) not null,
+    menu6 varchar(250) not null,
+    menu7 varchar(250) not null,
+    menu8 varchar(250) not null,
+    menu9 varchar(250) not null,
+    menu10 varchar(250) not null,
+    menu11 varchar(250) not null,
+    menu12 varchar(250) not null
+);
+
+create table naver(
+    idx         int             not null    AUTO_INCREMENT,
+    user_id     varchar(250)    not null,
+    user_pw   varchar(16)     not null,
+    user_name     varchar(250)    not null,
+    user_birth     varchar(250)    not null,
+    user_gender   varchar(250)    not null,
+    user_email varchar(9)      not null,
+    user_hp  varchar(250)    not null,
+    create_date     TIMESTAMP       DEFAULT     CURRENT_TIMESTAMP,
+    PRIMARY KEY(idx, user_id, user_email)
+);

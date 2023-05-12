@@ -1,0 +1,273 @@
+
+
+http://127.0.0.1:8080/jsp/0511_MVC_모델링_프로젝트_AJAX_DTO_DAO/쇼핑몰고객관리/kurly_user_signup_action.jsp
+
+http://localhost:8080/jsp/0511_MVC_모델링_프로젝트_AJAX_DTO_DAO/쇼핑몰고객관리/kurly_user_signup_action.jsp
+
+
+* 데이터베이스
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| cshong123          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sm                 |
+| sungmin            |
+| sys                |
+| user               |
+| world              |
++--------------------+
+10 rows in set (0.01 sec)
+
+
+DATABASE NAME: user;
+
+mysql> show tables;
++----------------+
+| Tables_in_user |
++----------------+
+| gaib_table     |
+| kurly_table    |
+| member         |
+| member_table   |
+| todo_list      |
+| user_table     |
++----------------+
+
+
+
+
+테이블설계 : kurly_table
+
+idx           int             NOT NULL       AUTO_INCREMENT,
+user_id       varchar(16)     not null,
+user_pw       varchar(16)     not null,
+user_name     varchar(30)     not null,
+user_email    varchar(250)    not null,
+user_hp       varchar(13)     not null,
+user_addr     varchar(250)    not null,
+user_gender   varchar(4),
+user_birth    varchar(10),
+gaib_date     TIMESTAMP         DEFAULT        CURRENT_TIMESTAMP,
+PRIMARY KEY(idx, user_id, user_email)
+
+
+
+create table kurly_table(
+    idx           int             NOT NULL       AUTO_INCREMENT,
+    user_id       varchar(16)     not null,
+    user_pw       varchar(16)     not null,
+    user_name     varchar(30)     not null,
+    user_email    varchar(250)    not null,
+    user_hp       varchar(13)     not null,
+    user_addr     varchar(250)    not null,
+    user_gender   varchar(4),
+    user_birth    varchar(10),
+    gaib_date     TIMESTAMP         DEFAULT        CURRENT_TIMESTAMP,
+    PRIMARY KEY(idx, user_id, user_email)
+);
+
+mysql> DESC kurly_table;
++-------------+--------------+------+-----+-------------------+-------------------+
+| Field       | Type         | Null | Key | Default           | Extra             |
++-------------+--------------+------+-----+-------------------+-------------------+
+| idx         | int          | NO   | PRI | NULL              | auto_increment    |
+| user_id     | varchar(16)  | NO   | PRI | NULL              |                   |
+| user_pw     | varchar(16)  | NO   |     | NULL              |                   |
+| user_name   | varchar(30)  | NO   |     | NULL              |                   |
+| user_email  | varchar(250) | NO   | PRI | NULL              |                   |
+| user_hp     | varchar(13)  | NO   |     | NULL              |                   |
+| user_addr   | varchar(250) | NO   |     | NULL              |                   |
+| user_gender | varchar(4)   | YES  |     | NULL              |                   |
+| user_birth  | varchar(10)  | YES  |     | NULL              |                   |
+| gaib_date   | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
++-------------+--------------+------+-----+-------------------+-------------------+
+10 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+package kurly;
+import java.sql.*;
+
+public class UserDAO {
+    private Connection conn;
+    private PreparedStatement ps;
+    private ResultSet rs;
+
+
+    public UserDAO(){
+        
+    }
+
+    // 1. 회원가입 signup
+    // 입력폼.jsp  = kurly_user_signup.jsp
+    // 입력액션파일.jsp  = kurly_user_signup_action.jsp
+
+
+    // 2. 회원로그인 signin
+    // 입력폼.jsp  = kurly_user_signin.jsp
+    // 입력액션파일.jsp  = kurly_user_signin_action.jsp
+
+
+    // 3. 회원정보수정 update
+    // 입력폼.jsp  = kurly_user_update.jsp
+    // 입력액션파일.jsp  = kurly_user_update_action.jsp
+
+    
+    // 4. 회원탈퇴(회원정보 삭제) delete
+    // 입력폼.jsp  = kurly_user_delete.jsp
+    // 입력액션파일.jsp  = kurly_user_delete_action.jsp
+
+
+
+
+    public int signup(UserDTO userDTO){
+        
+    }
+    public int signin(UserDTO userDTO){
+        
+    }
+    public int update(UserDTO userDTO){
+        
+    }
+    public int delete(UserDTO userDTO){
+        
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+package kurly;
+import java.sql.*;
+
+public class UserDAO {
+    private Connection conn;
+    private PreparedStatement ps;
+    private ResultSet rs;
+
+
+    public UserDAO(){
+
+        try{
+                // 변수설정
+                String URL = "jdbc:mysql://localhost:3306/user";
+                String ID = "root";
+                String PW = "1234";
+                // 1. 데이터베이스 드라이버(JDBC)
+                Class.forName("com.mysql.jdbc.Driver");
+                // 2. 데이터베이스 컨넥션 인증 & 인가(URL, ID, PW
+                conn = DriverManager.getConnection(URL, ID, PW);
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        } 
+    }
+
+    // 1. 회원가입 signup
+    // 2. 회원로그인 signin
+    // 3. 회원정보수정 update
+    // 4. 회원탈퇴(회원정보 삭제) delete
+
+    public int signup(UserDTO userDTO){
+        String SQL = "INSERT INTO kurly_table(user_id, user_pw, user_name, user_email, user_hp, user_addr, user_gender, user_birth) VALUES(?,?,?,?,?,?,?,?)";
+        try{
+            ps = conn.prepareStatement(SQL);
+            ps.setString(1, userDTO.getUser_id());
+            ps.setString(2, userDTO.getUser_pw());
+            ps.setString(3, userDTO.getUser_name());
+            ps.setString(4, userDTO.getUser_email());
+            ps.setString(5, userDTO.getUser_hp());
+            ps.setString(6, userDTO.getUser_addr());
+            ps.setString(7, userDTO.getUser_gender());
+            ps.setString(8, userDTO.getUser_birth());
+            return ps.executeUpdate();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        return -1;
+    }
+    public int signin(UserDTO userDTO){
+
+        return -2;
+    }
+    public int update(UserDTO userDTO){
+
+        return -1;
+    }
+    public int delete(UserDTO userDTO){
+
+        return -1;
+    }
+}
+
+아이디, 비밀번호 두개 모두 맞다면 로그인
+public int signin(String user_id, String user_pw){
+        String SQL = "SELECT * FROM kurly_table WHERE user_id=? AND user_pw=?";
+        try{
+            ps = conn.prepareStatement(SQL);
+            ps.setString(1, user_id);
+            ps.setString(2, user_pw);
+            rs = ps.executeQuery();
+            if(rs.next()){
+                return 1;
+
+            }
+        }
+        catch(Exception e ){
+            e.printStackTrace();
+        }
+        
+
+        return -2;
+    }
+
+
+        public int signin(String user_id, String user_pw){
+        String SQL = "SELECT user_pw FROM kurly_table WHERE user_id=? ";
+        try{
+            ps = conn.prepareStatement(SQL);
+            ps.setString(1, user_id);
+
+            rs = ps.executeQuery();
+            if(rs.next()){
+                if(rs.getString(1).equals(user_pw)){
+                    return 1; // 로그인 성공
+                    // idx 
+                    // rs.getInt(1)  
+
+                    // user_id
+                    // rs.getInt(2) 
+
+                    // user_pw
+                    // rs.getInt(3) 
+
+
+                }
+                else{
+                    return 0; // 로그인 실패(비밀번호가 틀린)
+                }
+            }
+            else{
+                return -1; // 로그인 실패(아이디가 틀린)
+            }
+        }
+        catch(Exception e ){
+            e.printStackTrace();
+        }
+        return -2; // 로그인 실패(데이터베이스 오류)
+    }
+
+
+
+
+

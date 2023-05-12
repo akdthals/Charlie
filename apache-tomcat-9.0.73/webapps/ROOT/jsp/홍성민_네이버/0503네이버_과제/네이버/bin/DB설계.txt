@@ -1,0 +1,13 @@
+CREATE TABLE member(
+    idx int PRIMARY KEY AUTO_INCREMENT,
+    id VARCHAR(20) NOT NULL,
+    pw VARCHAR(20) NOT NULL,
+    name VARCHAR(20) NOT NULL,
+    birth VARCHAR(50) NOT NULL,
+    gender VARCHAR(20) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    hp VARCHAR(20) NOT NULL,
+    create_date timestamp DEFAULT CURRENT_TIMESTAMP
+);
+
+ENGINE InnoDB DEFAULT CHARSET=utf8mb4;
