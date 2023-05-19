@@ -216,7 +216,37 @@ jsp 는 자바가 들어가는 경우
 => 서블릿(요청(HTTP OR  HTTPS REQUST)을 받으면 응답(HTTP OR HTTPS RESPONSE)  서블릿 메서드(CRUD)가 실행)
 => HTML(HTTP 통신)
 
+0517 /////////////////////////////////////////////////////////////
+"proxy": "http://localhost:8080" = 톰캣이랑 연결시 콜스라는 정책에서 접속이 안되어 해결 방법은 proxy를 설정한다. 포트번호까지만 적는다 (8080) 파일 전까지 경로를 설정
 
+setupProxy.js 파일 만들기 => src 안에서
+리액트에서 파일 불러 올때 import 또는 require 환경에 맞게 사용해야한다.
+require 예시]
+const {createProxyMiddleware} = require('http-proxy-middleware');
+
+module.exports = (WrapComponent)=>{
+    WrapComponent.use(
+        "/signup_db",
+        createProxyMiddleware({
+            "target":"http://cshong123.dothome.co.kr",
+            changeOrigin: true
+        })
+    )
+    WrapComponent.use(
+        "/php",
+        createProxyMiddleware({
+            "target":"http://cshong123.com",
+            changeOrigin: true
+        })
+    )
+    // WrapComponent.use(
+    //     "/asp",
+    //     createProxyMiddleware({
+    //         "target":"http://localhost:8080",
+    //         changeOrigin: true
+    //     })
+    // )
+}
 
 
 

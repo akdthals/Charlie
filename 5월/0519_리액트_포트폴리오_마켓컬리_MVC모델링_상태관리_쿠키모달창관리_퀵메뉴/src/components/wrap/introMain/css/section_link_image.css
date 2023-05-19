@@ -1,0 +1,22 @@
+.section_link_image {
+  width: 100%;
+  padding: 40px 0 0 0;
+}
+.section_link_image .container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.section_link_image .container .gap {
+  width: 100%;
+}
+.section_link_image .container .gap .content {
+  width: 100%;
+}
+.section_link_image .container .gap .content a {
+  display: block;
+  width: 100%;
+}
+.section_link_image .container .gap .content a img {
+  width: 100%;
+}
