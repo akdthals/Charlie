@@ -6,6 +6,9 @@ import axios from 'axios';
 
 export default function Section4Component () {
 
+    // const [cnt, setCnt] = React.useState(0);
+    // setCnt(cnt+1);
+
     const [state,setState]  = React.useState({
         일일특가: []
     });

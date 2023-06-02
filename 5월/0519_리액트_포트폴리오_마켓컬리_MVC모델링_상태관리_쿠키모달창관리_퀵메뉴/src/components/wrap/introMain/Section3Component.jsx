@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-export default function Section3Component () {
+export default function Section3Component ({setViewProduct}) {
 
         // 1. state 상태관리 변수 지정
         // 2. AXIOS 외부데이터 상품 가져오기 그리고 상태관리 배열 변수, 상품개수 n 에 데이터 저장하기
@@ -118,7 +118,7 @@ export default function Section3Component () {
                     </div>
                     <div className="content">
 
-                    <Section3SlideComponent 상품={state.상품}/>
+                    <Section3SlideComponent 상품={state.상품}  setViewProduct={setViewProduct}/>
 
                     </div>
                 </div>

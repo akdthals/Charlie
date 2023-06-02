@@ -48,7 +48,7 @@ export default function Section7Component () {
 
 
         
-        // 섹션3 슬라이드
+        // 섹션7 슬라이드
         React.useEffect(()=>{
         
             const $slideContainer = $('#section7 .slide-container');
@@ -68,17 +68,17 @@ export default function Section7Component () {
             function mainSlide(){
                 $slideWrap.stop().animate({left: `${-100*cnt}%`},300);
                 if( cnt>=4 ){
-                    $('#section7.right-arrorw-btn').stop().fadeOut(300);
+                    $('#section7 .right-arrorw-btn').stop().fadeOut(300);
                 }
                 else{
-                    $('#section7.right-arrorw-btn').stop().fadeIn(300);
+                    $('#section7 .right-arrorw-btn').stop().fadeIn(300);
                 }
                 
                 if( cnt<=0 ){
-                    $('#section7.left-arrorw-btn').stop().fadeOut(300);
+                    $('#section7 .left-arrorw-btn').stop().fadeOut(300);
                 }
                 else{
-                    $('#section7.left-arrorw-btn').stop().fadeIn(300);
+                    $('#section7 .left-arrorw-btn').stop().fadeIn(300);
                 }
             }  
             //2-1. 다음카운트함수
@@ -114,7 +114,7 @@ export default function Section7Component () {
             <div className="container">
                 <div className="gap">
                     <div className="title">
-                        <h2>놓치면 후회할 가격 〉</h2>
+                        <h2>이 상품 어때요?</h2>
                     </div>
                     <div className="content">
 

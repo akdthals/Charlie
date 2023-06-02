@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Section3SlideComponent ({상품}) {
+export default function Section3SlideComponent ({상품, setViewProduct}) {
 
     // 판매가격, 정가 콤머형식 함수
     const commaPrice=(price)=>{
@@ -11,6 +11,17 @@ export default function Section3SlideComponent ({상품}) {
         }        
     }
 
+
+    const onClickProductList=(e, product)=>{
+        e.preventDefault();
+        let obj = {
+            제품코드: product.제품코드,
+            이미지: `http://localhost:3000/images/intro/${product.이미지}`,
+            저장일시: new Date().getTime()
+        }
+        setViewProduct(obj);
+    }
+
     return (
         <div className="slide-container">
             <div className="slide-view">
@@ -19,9 +30,9 @@ export default function Section3SlideComponent ({상품}) {
                     {                    
                         상품.map((item)=>{
                             return(
-                                <li className="slide slide0" key={item.제품코드}>
+                                <li  className="slide slide0" key={item.제품코드}>
                                     <div className="col-gap">
-                                        <a href="!#">
+                                        <a href="!#" onClick={(e)=>onClickProductList(e, item)}>
                                             <div className="img-box">
                                                 <img src={`./images/intro/${item.이미지}`} alt="" />
                                                 <span>
