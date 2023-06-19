@@ -1,0 +1,89 @@
+#signInIdSearch {
+  width: 100%;
+  padding: 100px 0;
+}
+#signInIdSearch #section1 .container {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+#signInIdSearch #section1 .container .title {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 40px 0;
+}
+#signInIdSearch #section1 .container .title h2 {
+  width: 100%;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+#signInIdSearch #section1 .container .content {
+  width: 100%;
+}
+#signInIdSearch #section1 .container .content form ul {
+  width: 100%;
+}
+#signInIdSearch #section1 .container .content form ul li {
+  width: 100%;
+  padding: 0 0 12px 0;
+}
+#signInIdSearch #section1 .container .content form ul li:nth-child(even) {
+  padding: 20px 0 12px 0;
+}
+#signInIdSearch #section1 .container .content form ul li:nth-child(6) {
+  padding: 10px 0;
+}
+#signInIdSearch #section1 .container .content form ul li button {
+  height: 50px;
+  cursor: pointer;
+  width: 50%;
+  height: 54px;
+  color: #888;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+#signInIdSearch #section1 .container .content form ul li button.on {
+  color: #5f0080;
+  border-bottom: 2px solid #5f0080;
+}
+#signInIdSearch #section1 .container .content form ul li label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+#signInIdSearch #section1 .container .content form ul li input {
+  border-radius: 3px;
+  width: 100%;
+  height: 54px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition: all 0.3;
+  padding: 0 15px;
+}
+#signInIdSearch #section1 .container .content form ul li input:focus {
+  outline: 1px solid #777;
+  background: rgb(232, 240, 254);
+}
+#signInIdSearch #section1 .container .content form ul li:last-child button {
+  cursor: pointer;
+  background: #ddd;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  height: 54px;
+  border-radius: 3px;
+  border: 0;
+}
+#signInIdSearch #section1 .container .content form ul li:last-child button.on {
+  background: #5f0080;
+  color: #5f0080;
+}

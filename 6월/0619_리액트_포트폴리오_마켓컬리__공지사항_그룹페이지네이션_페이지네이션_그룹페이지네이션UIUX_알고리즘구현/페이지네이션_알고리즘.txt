@@ -1,0 +1,36 @@
+1.
+list = 5 
+1페이지 => 보여줄 줄 수 지정 5행(1페이지)
+1페이지 => 0 1 2 3 4 (1 2 3 4 5)
+
+Math.ceil((odx+1)/list)
+
+
+페이지그룹 알고리즘
+시작번호0 끝번호4
+group = 5; (페이지번호 개수)
+startNumber = (cnt-1)* group
+endNumber = startNumber + group
+for(let i=startNumber; i<endNumber; i++){
+
+}
+
+그룹1 
+cnt =1;
+group = 5;
+startNumber = (1-1)* group
+endNumber = startNumber + group
+for(let i=0; i<5; i++){
+    0 1 2 3 4 
+}
+>
+
+그룹2 
+cnt =2;
+group = 5;
+startNumber = (2-1)* group
+endNumber = startNumber + group
+for(let i=5; i<10; i++){
+    5 6 7 8 9
+}
+>
